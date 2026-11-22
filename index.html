@@ -1,0 +1,1026 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Авторский гайд Екатерины Фиалки: фазы Луны, ритуалы, намерения, лунный дневник и календарь новолуний и полнолуний на 2027 год по московскому времени.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Магия Луны. Как жить в гармонии с лунными циклами">
+<meta property="og:description" content="Авторский гайд Екатерины Фиалки: фазы Луны, ритуалы, намерения, лунный дневник и календарь новолуний и полнолуний на 2027 год по московскому времени.">
+<meta property="og:image" content="https://hobberg.github.io/luna/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://hobberg.github.io/luna/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#16102A">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Магия Луны · Екатерина Фиалка</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&family=Marck+Script&display=swap">
+<style>
+/* Layout: ночной свиток. Каждая глава открывается своим лунным диском, и, пролистывая гайд, читательница проходит весь цикл от тёмной Луны к полной и обратно. */
+:root{
+  --night:#16102A; --panel:#211A3B; --panel-2:#2A2149;
+  --ink:#EFE9F7; --muted:#B8AED3; --lilac:#C8B4EE; --lavender:#9C86D6;
+  --silver:#DCDFE9; --gold:#D9B66E; --line:rgba(200,180,238,.22);
+  --moon-dark:#3A2F5E; --moon-lit:#E9E6F2; --star:rgba(236,230,250,.55); --glow:rgba(222,216,244,.38);
+  --display:"Cormorant Garamond","Cormorant",Georgia,"Times New Roman",serif;
+  --body:"Manrope","Segoe UI",system-ui,-apple-system,sans-serif;
+  --script:"Marck Script","Segoe Script",cursive;
+  color-scheme:dark;
+}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){
+  --night:#F8F4FB; --panel:#EFE7F8; --panel-2:#E6DBF4;
+  --ink:#2A1C47; --muted:#5D4F80; --lilac:#6B4BAE; --lavender:#7E62C2;
+  --silver:#868CA3; --gold:#9C7426; --line:rgba(107,75,174,.22);
+  --moon-dark:#D9CDEE; --moon-lit:#FFFFFF; --star:rgba(107,75,174,.28); --glow:rgba(120,90,190,.35);
+  color-scheme:light;
+}}
+:root[data-theme="light"]{
+  --night:#F8F4FB; --panel:#EFE7F8; --panel-2:#E6DBF4;
+  --ink:#2A1C47; --muted:#5D4F80; --lilac:#6B4BAE; --lavender:#7E62C2;
+  --silver:#868CA3; --gold:#9C7426; --line:rgba(107,75,174,.22);
+  --moon-dark:#D9CDEE; --moon-lit:#FFFFFF; --star:rgba(107,75,174,.28); --glow:rgba(120,90,190,.35);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{
+  background-color:var(--night);
+  background-image:
+    radial-gradient(1px 1px at 12% 8%,var(--star),transparent 60%),
+    radial-gradient(1.5px 1.5px at 78% 14%,var(--star),transparent 60%),
+    radial-gradient(1px 1px at 44% 31%,var(--star),transparent 60%),
+    radial-gradient(1px 1px at 90% 47%,var(--star),transparent 60%),
+    radial-gradient(1.5px 1.5px at 23% 62%,var(--star),transparent 60%),
+    radial-gradient(1px 1px at 63% 76%,var(--star),transparent 60%),
+    radial-gradient(1px 1px at 7% 88%,var(--star),transparent 60%),
+    radial-gradient(1px 1px at 52% 95%,var(--star),transparent 60%);
+  background-size:520px 520px;
+  color:var(--ink); font-family:var(--body); font-size:17px; line-height:1.7;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+}
+a{color:var(--lilac)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto}
+.prose{max-width:66ch}
+h1,h2,h3,h4{font-family:var(--display);font-weight:500;text-wrap:balance;line-height:1.15;margin:0}
+h2{font-size:clamp(2.1rem,5vw,3.2rem)}
+h3{font-size:1.65rem;margin-top:2.4rem;margin-bottom:.6rem;color:var(--lilac)}
+h4{font-size:1.3rem;margin-top:1.6rem;margin-bottom:.4rem}
+p{margin:0 0 1em}
+.eyebrow{font-family:var(--body);font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.muted{color:var(--muted)}
+.svg-defs{position:absolute;width:0;height:0;overflow:hidden}
+.moon{display:block}
+.dark{fill:var(--moon-dark)}
+.lit{fill:var(--moon-lit)}
+:where(svg:has(> use[href^="#m-"])){filter:drop-shadow(0 0 5px var(--glow))}
+
+/* Обложка: фото на фоне Луны, лицо открыто, текст внизу на градиенте */
+.hero{position:relative;isolation:isolate;overflow:hidden;text-align:center;background:#16102A;
+  margin-left:calc(-1 * max(16px,env(safe-area-inset-left,0px)));margin-right:calc(-1 * max(16px,env(safe-area-inset-right,0px)))}
+.hero-media{position:relative;z-index:-1}
+.hero-media img{display:block;width:100%;height:auto;max-width:none}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(22,16,42,0) 0%,rgba(22,16,42,0) 55%,rgba(22,16,42,.55) 72%,rgba(22,16,42,.92) 88%,#16102A 100%)}
+.hero-inner{position:relative;margin-top:-34vw;padding-bottom:44px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.hero .eyebrow{color:#E6C684;text-shadow:0 1px 12px rgba(0,0,0,.5)}
+.hero h1{font-size:clamp(2.7rem,7.2vw,5.4rem);font-weight:400;letter-spacing:.12em;line-height:1.02;color:#EEEBF5;margin:14px 0 0 .12em;text-shadow:0 4px 34px rgba(10,6,24,.6)}
+.hero .sub{font-family:var(--display);font-style:italic;font-size:clamp(1.35rem,2.6vw,1.9rem);line-height:1.3;margin:.45em auto 0;max-width:20em;text-wrap:balance;color:#F5F1FA;text-shadow:0 2px 18px rgba(10,6,24,.6)}
+.author{margin-top:22px}
+.author .sig{font-family:var(--script);font-size:2rem;color:#E6C684;line-height:1;text-shadow:0 2px 16px rgba(10,6,24,.6)}
+.author .role{font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(240,235,250,.72);margin-top:6px}
+@media (min-width:861px){
+  .hero{min-height:clamp(820px,100vh,1000px);display:flex;align-items:flex-end;justify-content:center}
+  .hero-media{position:absolute;inset:0}
+  .hero-media img{position:absolute;left:50%;top:0;height:100%;width:auto;transform:translateX(-50%);
+    -webkit-mask-image:linear-gradient(90deg,transparent,#000 20%,#000 80%,transparent);mask-image:linear-gradient(90deg,transparent,#000 20%,#000 80%,transparent)}
+  .hero-media::after{background:linear-gradient(180deg,rgba(22,16,42,0) 0%,rgba(22,16,42,0) 52%,rgba(22,16,42,.6) 70%,rgba(22,16,42,.94) 86%,#16102A 100%)}
+  .hero-inner{margin-top:0;padding-bottom:56px}
+  .hero .sub{max-width:none}
+}
+.hero-after{text-align:center;padding-block:36px 8px}
+.hero-after .lead{color:var(--muted);max-width:46ch;margin:0 auto}
+.phases-row{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap;justify-content:center}
+.phases-row svg{width:30px;height:30px}
+.arch{position:relative;max-width:420px;justify-self:center;width:100%}
+.arch img{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:999px 999px 18px 18px;display:block}
+.arch::before{content:"";position:absolute;inset:-12px;border:1px solid var(--line);border-radius:999px 999px 26px 26px;pointer-events:none}
+.arch::after{content:"";position:absolute;inset:-24px;border:1px solid var(--gold);opacity:.35;border-radius:999px 999px 34px 34px;pointer-events:none}
+
+/* Содержание */
+.toc{border-bottom:1px solid var(--line);padding-block:40px 36px;margin-block:0}
+.toc ol{list-style:none;margin:20px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 40px;counter-reset:t}
+.toc li{counter-increment:t}
+.toc a{display:flex;gap:14px;align-items:baseline;padding:8px 0;text-decoration:none;color:var(--ink);border-bottom:1px dashed var(--line)}
+.toc a::before{content:counter(t,upper-roman);font-family:var(--display);color:var(--gold);min-width:2.4em;font-size:1.05rem}
+.toc a:hover{color:var(--lilac)}
+
+/* Главы */
+.chapter{display:grid;grid-template-columns:150px minmax(0,1fr);gap:clamp(20px,4vw,56px);padding-block:72px 24px}
+.chapter-mark{position:sticky;top:calc(env(safe-area-inset-top,0px) + 24px);align-self:start;text-align:center}
+.chapter-mark svg{width:120px;height:120px;margin:0 auto;filter:drop-shadow(0 0 24px var(--glow))}
+.chapter-mark .num{font-family:var(--display);font-size:1.1rem;color:var(--gold);margin-top:12px;letter-spacing:.2em}
+.chapter-body{min-width:0}
+.chapter-head{margin-bottom:28px}
+.chapter-head .energy{font-family:var(--display);font-style:italic;font-size:1.3rem;color:var(--muted);margin-top:10px}
+.divider{display:flex;align-items:center;justify-content:center;gap:16px;color:var(--gold);opacity:.8;padding-top:24px}
+.divider::before,.divider::after{content:"";height:1px;flex:1;max-width:240px;background:linear-gradient(90deg,transparent,var(--line))}
+.divider::after{background:linear-gradient(90deg,var(--line),transparent)}
+.divider svg{width:120px;height:20px}
+
+ul.dots,ol.steps{padding-left:1.3em;margin:0 0 1.2em}
+ul.dots li::marker{color:var(--gold);content:"✦  "}
+ol.steps li::marker{color:var(--gold);font-family:var(--display);font-weight:600}
+ul.dots li,ol.steps li{margin-bottom:.3em}
+
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:18px 0 8px}
+.cols > *{min-width:0}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+.box h4{margin-top:0;color:var(--lilac)}
+.box.avoid h4{color:var(--muted)}
+.box ul{margin-bottom:0}
+
+.quote{font-family:var(--display);font-style:italic;font-size:clamp(1.45rem,3vw,1.9rem);line-height:1.35;color:var(--silver);border:none;margin:36px 0;padding:8px 0 8px 28px;position:relative;max-width:30em}
+.quote::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:1px;background:linear-gradient(var(--gold),transparent)}
+.quote cite{display:block;font-family:var(--script);font-style:normal;font-size:1.3rem;color:var(--gold);margin-top:10px}
+
+.affirm{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 8px;padding:0;list-style:none}
+.affirm li{font-family:var(--display);font-style:italic;font-size:1.15rem;padding:6px 16px;border:1px solid var(--line);border-radius:999px;background:var(--panel)}
+
+.ritual{border:1px solid var(--line);border-radius:18px;padding:24px 26px;margin:22px 0;background:linear-gradient(160deg,var(--panel),transparent 85%)}
+.ritual h4{margin-top:0;font-size:1.45rem}
+.ritual .need{font-size:.92rem;color:var(--muted);margin-bottom:12px}
+.ritual .need b{color:var(--gold);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:.74rem;margin-right:6px}
+.spell{font-family:var(--display);font-style:italic;font-size:1.22rem;line-height:1.5;color:var(--silver);background:var(--panel-2);border-radius:12px;padding:16px 20px;margin:14px 0;white-space:pre-line}
+.credit{font-size:.82rem;color:var(--muted);letter-spacing:.04em}
+
+.task{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px 16px;align-items:start;border:1px dashed var(--gold);border-radius:14px;padding:18px 22px;margin:26px 0}
+.task .tag{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600;padding-top:4px}
+.task p:last-child{margin:0}
+
+.note{font-size:.9rem;color:var(--muted);border-left:2px solid var(--line);padding-left:14px;margin:14px 0}
+
+.group-title{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);font-family:var(--display);font-size:1.95rem;color:var(--ink)}
+.group-title span{color:var(--gold);margin-right:.4em}
+
+.phase-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:18px}
+.phase-card{display:grid;grid-template-columns:48px minmax(0,1fr);gap:16px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+.phase-card svg{width:46px;height:46px}
+.phase-card h4{margin:0 0 4px;font-size:1.25rem}
+.phase-card h4 small{display:block;font-family:var(--body);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:2px}
+.phase-card p{margin:0 0 6px;font-size:.95rem}
+.phase-card .themes{font-size:.86rem;color:var(--muted)}
+
+.principle{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:24px 0}
+.principle div{text-align:center;padding:20px 12px;border-radius:14px;border:1px solid var(--line)}
+.principle svg{width:60px;height:60px;margin:0 auto 12px}
+.principle b{display:block;font-family:var(--display);font-weight:500;font-size:1.15rem}
+.principle span{font-family:var(--display);font-style:italic;color:var(--lilac);font-size:1.1rem}
+
+.figure-wide{margin:34px 0;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1fr);gap:28px;align-items:center}
+.figure-wide .arch{max-width:300px}
+
+.table-wrap{overflow-x:auto;margin:20px 0;border:1px solid var(--line);border-radius:14px}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:.94rem}
+th,td{padding:14px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{font-family:var(--display);font-weight:500;font-size:1.15rem;color:var(--lilac);background:var(--panel)}
+tr:last-child td{border-bottom:none}
+td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
+
+/* Календарь */
+.cal-legend{display:flex;flex-wrap:wrap;gap:18px;margin:16px 0 8px;font-size:.88rem;color:var(--muted)}
+.cal-legend span{display:inline-flex;align-items:center;gap:8px}
+.cal-legend svg{width:18px;height:18px}
+.cal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:22px}
+.month{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px 18px 12px;min-width:0}
+.month h4{margin:0 0 10px;font-size:1.45rem;display:flex;justify-content:space-between;align-items:baseline}
+.month h4 small{font-family:var(--body);font-size:.7rem;letter-spacing:.18em;color:var(--muted)}
+.ev{display:grid;grid-template-columns:22px 2.6em minmax(0,1fr) auto;gap:10px;align-items:center;padding:7px 0;border-top:1px dashed var(--line);font-variant-numeric:tabular-nums}
+.ev svg{width:20px;height:20px}
+.ev .d{font-family:var(--display);font-size:1.3rem;line-height:1}
+.ev .n{font-size:.86rem}
+.ev .t{font-size:.82rem;color:var(--muted)}
+.ev.major .n{font-weight:600;color:var(--ink)}
+.ev.minor{opacity:.72}
+.ev .ecl{display:block;font-size:.72rem;color:var(--gold);letter-spacing:.04em}
+.cal-note{font-size:.88rem;color:var(--muted);margin-top:18px}
+.lists{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:26px}
+.lists .box ol{list-style:none;padding:0;margin:0;columns:2;column-gap:20px;font-variant-numeric:tabular-nums;font-size:.95rem}
+.lists .box li{padding:3px 0;break-inside:avoid}
+.lists .box li b{font-family:var(--display);font-weight:600;font-size:1.08rem}
+
+/* Заключение */
+.outro{text-align:center;padding-block:80px 100px;max-width:44em;margin:0 auto}
+.outro svg.big{width:140px;height:140px;margin:0 auto 28px;filter:drop-shadow(0 0 36px var(--glow))}
+.outro p{font-family:var(--display);font-size:1.4rem;line-height:1.55}
+.outro .sig{font-family:var(--script);font-size:2.6rem;color:var(--gold);margin-top:24px}
+.footer{text-align:center;font-size:.8rem;color:var(--muted);padding-block:0 48px}
+
+@media (max-width:860px){
+  .chapter{grid-template-columns:1fr;padding-block:56px 16px}
+  .chapter-mark{position:static;display:flex;align-items:center;gap:16px;text-align:left}
+  .chapter-mark svg{width:64px;height:64px;margin:0}
+  .chapter-mark .num{margin:0}
+  .cal{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .principle{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .figure-wide{grid-template-columns:1fr}
+}
+@media (max-width:620px){
+  body{font-size:16px}
+  .toc ol,.cols,.phase-grid,.cal,.lists{grid-template-columns:1fr}
+  .lists .box ol{columns:2}
+  .ritual{padding:20px 18px}
+}
+</style>
+</head>
+<body>
+<svg class="svg-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><symbol id="m-new" viewBox="-12 -12 24 24"><image href="moon-new.png" x="-12" y="-12" width="24" height="24"/></symbol><symbol id="m-wxc" viewBox="-12 -12 24 24"><image href="moon-wxc.png" x="-12" y="-12" width="24" height="24"/></symbol><symbol id="m-fq" viewBox="-12 -12 24 24"><image href="moon-fq.png" x="-12" y="-12" width="24" height="24"/></symbol><symbol id="m-wxg" viewBox="-12 -12 24 24"><image href="moon-wxg.png" x="-12" y="-12" width="24" height="24"/></symbol><symbol id="m-full" viewBox="-12 -12 24 24"><image href="moon-full.png" x="-12" y="-12" width="24" height="24"/></symbol><symbol id="m-wng" viewBox="-12 -12 24 24"><image href="moon-wng.png" x="-12" y="-12" width="24" height="24"/></symbol><symbol id="m-lq" viewBox="-12 -12 24 24"><image href="moon-lq.png" x="-12" y="-12" width="24" height="24"/></symbol><symbol id="m-wnc" viewBox="-12 -12 24 24"><image href="moon-wnc.png" x="-12" y="-12" width="24" height="24"/></symbol><symbol id="orn" viewBox="0 0 120 20"><g fill="currentColor"><circle cx="20" cy="10" r="1.2"/><circle cx="36" cy="10" r="1.6"/><circle cx="84" cy="10" r="1.6"/><circle cx="100" cy="10" r="1.2"/><path d="M60 1 L62.2 7.8 L69 10 L62.2 12.2 L60 19 L57.8 12.2 L51 10 L57.8 7.8Z"/></g><g fill="none" stroke="currentColor" stroke-width=".8"><path d="M44 10 A6 6 0 1 0 48 4.4 A4.5 4.5 0 1 1 44 10Z"/><path d="M76 10 A6 6 0 1 1 72 4.4 A4.5 4.5 0 1 0 76 10Z"/></g></symbol></svg>
+
+<header class="hero">
+  <div class="hero-media"><img src="photo-3.jpg" alt="Екатерина Фиалка на фоне полной Луны"></div>
+  <div class="hero-inner">
+    <div class="eyebrow">Авторский гайд · лунные циклы 2027</div>
+    <h1>МАГИЯ ЛУНЫ</h1>
+    <p class="sub">Как жить в гармонии с лунными циклами</p>
+    <div class="author">
+      <div class="sig">Екатерина Фиалка</div>
+      <div class="role">автор гайда</div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<div class="hero-after">
+  <p class="lead">Путеводитель по лунным циклам, женской энергии и магическим практикам. Как использовать символику Луны в работе с желаниями, любовью, красотой и изобилием.</p>
+  <div class="phases-row" aria-hidden="true">
+    <svg><use href="#m-new"/></svg><svg><use href="#m-wxc"/></svg><svg><use href="#m-fq"/></svg><svg><use href="#m-wxg"/></svg><svg><use href="#m-full"/></svg><svg><use href="#m-wng"/></svg><svg><use href="#m-lq"/></svg><svg><use href="#m-wnc"/></svg>
+  </div>
+</div>
+
+<nav class="toc" aria-label="Содержание">
+  <div class="eyebrow">Содержание</div>
+  <ol>
+    <li><a href="#intro">Луна и наша цикличность</a></li>
+    <li><a href="#phases">Фазы Луны</a></li>
+    <li><a href="#new">Новолуние</a></li>
+    <li><a href="#waxing">Растущая Луна</a></li>
+    <li><a href="#full">Полнолуние</a></li>
+    <li><a href="#full-rituals">Ритуалы полнолуния</a></li>
+    <li><a href="#waning">Убывающая Луна</a></li>
+    <li><a href="#cheatsheet">Что делать в каждую фазу</a></li>
+    <li><a href="#intentions">Намерения и лунный дневник</a></li>
+    <li><a href="#rules">Правила лунных ритуалов</a></li>
+    <li><a href="#calendar">Лунный календарь 2027</a></li>
+    <li><a href="#outro">Слово автора</a></li>
+  </ol>
+</nav>
+
+<!-- I. Введение -->
+<section class="chapter" id="intro">
+  <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-wnc"/></svg><div class="num">I</div></div>
+  <div class="chapter-body prose">
+    <div class="chapter-head">
+      <div class="eyebrow">Введение</div>
+      <h2>Луна и наша цикличность</h2>
+    </div>
+    <p>Лунный цикл длится приблизительно <b>29,5 суток</b>. За это время Луна проходит восемь основных фаз: от тонкого серпа к полному свету и снова к тишине.</p>
+    <p>В эзотерической традиции у каждой фазы своя символика и своя направленность. Сам цикл можно воспринимать как отражение жизненных процессов: рождения, роста, проявления, завершения и обновления.</p>
+    <blockquote class="quote">Мы не можем постоянно находиться на пике. Есть время расти, время проявляться, время собирать плоды и время отдыхать.<cite>Фиалка</cite></blockquote>
+    <p>Этот гайд поможет вам замечать свой ритм, ставить намерения в правильный момент и бережно отпускать лишнее.</p>
+    <p class="note">Все трактовки в гайде относятся к эзотерической традиции и символике Луны. Это не научно доказанные факты и не обещание гарантированного результата. Практики помогают сфокусироваться на желаниях, а реальные шаги к ним делаете вы сами.</p>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><svg viewBox="0 0 120 20"><use href="#orn"/></svg></div>
+
+<!-- II. Фазы -->
+<section class="chapter" id="phases">
+  <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-new"/></svg><div class="num">II</div></div>
+  <div class="chapter-body">
+    <div class="chapter-head prose">
+      <div class="eyebrow">Глава вторая</div>
+      <h2>Фазы Луны и их влияние</h2>
+      <p class="energy">Четыре главных этапа и восемь фаз внутри них</p>
+    </div>
+
+    <h3>Главный принцип лунного цикла</h3>
+    <div class="principle">
+      <div><svg aria-hidden="true"><use href="#m-new"/></svg><b>Новолуние</b><span>я выбираю, чего хочу</span></div>
+      <div><svg aria-hidden="true"><use href="#m-wxg"/></svg><b>Растущая Луна</b><span>я действую и привлекаю</span></div>
+      <div><svg aria-hidden="true"><use href="#m-full"/></svg><b>Полнолуние</b><span>я проявляюсь и благодарю</span></div>
+      <div><svg aria-hidden="true"><use href="#m-wng"/></svg><b>Убывающая Луна</b><span>я отпускаю и освобождаю место новому</span></div>
+    </div>
+
+    <h3>Восемь фаз</h3>
+    <div class="phase-grid">
+      <div class="phase-card"><svg aria-hidden="true"><use href="#m-new"/></svg><div><h4><small>Фаза 1</small>Новолуние — чистый лист</h4><p>Время новых начинаний, формирования намерений, постановки целей и планирования.</p><div class="themes">Темы: желания, мечты, внутреннее обновление, новые возможности.</div></div></div>
+      <div class="phase-card"><svg aria-hidden="true"><use href="#m-wxc"/></svg><div><h4><small>Фаза 2</small>Растущий месяц — посев намерений</h4><p>Появляется тонкий лунный серп. Символически начинает набирать силу энергия движения.</p><div class="themes">Темы: привлечение, развитие, первые шаги, направление намерений во Вселенную.</div></div></div>
+      <div class="phase-card"><svg aria-hidden="true"><use href="#m-fq"/></svg><div><h4><small>Фаза 3</small>Первая четверть — рост и движение</h4><p>Время активных действий, первых испытаний и преодоления препятствий.</p><div class="themes">Темы: решительность, действия, движение к целям, проверка намерений.</div></div></div>
+      <div class="phase-card"><svg aria-hidden="true"><use href="#m-wxg"/></svg><div><h4><small>Фаза 4</small>Растущая Луна — накопление сил</h4><p>Период укрепления, восстановления сил, исправления ошибок и подготовки к результату.</p><div class="themes">Темы: терпение, развитие, укрепление, подготовка.</div></div></div>
+      <div class="phase-card"><svg aria-hidden="true"><use href="#m-full"/></svg><div><h4><small>Фаза 5</small>Полнолуние — пик цикла</h4><p>Время максимального освещения Луны. В эзотерике его связывают с кульминацией процессов, проявлением результатов и благодарностью.</p><div class="themes">Темы: раскрытие, эмоции, любовь, изобилие, благодарность, осознание.</div></div></div>
+      <div class="phase-card"><svg aria-hidden="true"><use href="#m-wng"/></svg><div><h4><small>Фаза 6</small>Убывающая Луна — осмысление</h4><p>Время получения результатов, анализа пройденного пути и понимания того, что больше не нужно.</p><div class="themes">Темы: завершение, освобождение, анализ, подведение итогов.</div></div></div>
+      <div class="phase-card"><svg aria-hidden="true"><use href="#m-lq"/></svg><div><h4><small>Фаза 7</small>Третья четверть — прощание</h4><p>Переходный период: прощение, отпускание старого и реорганизация жизни.</p><div class="themes">Темы: освобождение от обид, завершение отношений и процессов, внутренние перемены.</div></div></div>
+      <div class="phase-card"><svg aria-hidden="true"><use href="#m-wnc"/></svg><div><h4><small>Фаза 8</small>Убывающий месяц — восстановление</h4><p>Последний этап перед новым лунным циклом.</p><div class="themes">Темы: отдых, восстановление, уединение, рефлексия, подготовка к новому началу.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><svg viewBox="0 0 120 20"><use href="#orn"/></svg></div>
+
+<!-- III. Новолуние -->
+<section class="chapter" id="new">
+  <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-new"/></svg><div class="num">III</div></div>
+  <div class="chapter-body prose">
+    <div class="chapter-head">
+      <div class="eyebrow">Глава третья</div>
+      <h2>Новолуние — время внутрь</h2>
+      <p class="energy">Энергия периода: тишина, обнуление, перезагрузка, новые намерения</p>
+    </div>
+    <p>Новолуние открывает новый лунный цикл. В эзотерической традиции этот период связывают с внутренней работой, вниманием к себе и зарождением новых желаний.</p>
+    <p>Это время чистого листа. Необязательно сразу бросаться в действия. <b>Сначала важно понять, чего вы действительно хотите.</b></p>
+
+    <h3>Как может ощущаться этот период</h3>
+    <ul class="dots">
+      <li>желание уединиться и потребность в тишине;</li>
+      <li>переосмысление жизненных целей;</li>
+      <li>меньше хочется общаться;</li>
+      <li>эмоциональная чувствительность;</li>
+      <li>стремление начать что-то новое.</li>
+    </ul>
+    <p class="muted">Каждый человек проживает этот период индивидуально.</p>
+
+    <div class="cols">
+      <div class="box">
+        <h4>Что рекомендуется</h4>
+        <ol class="steps">
+          <li>Медитации на контакт с собой.</li>
+          <li>Формулировать желания и намерения.</li>
+          <li>Составлять планы на ближайший месяц.</li>
+          <li>Начать дневник желаний.</li>
+          <li>Очищать пространство от ненужных вещей.</li>
+          <li>Расслабляющие ванны с морской солью.</li>
+          <li>Пересматривать цели и жизненные ориентиры.</li>
+          <li>Начинать обучение, планировать проекты.</li>
+          <li>Работать с ограничивающими убеждениями.</li>
+          <li>Уделять внимание отдыху и восстановлению.</li>
+        </ol>
+      </div>
+      <div class="box avoid">
+        <h4>Чего лучше избегать</h4>
+        <ul class="dots">
+          <li>Перегрузки делами.</li>
+          <li>Множества новых обязательств одновременно.</li>
+          <li>Импульсивных решений.</li>
+          <li>Действий из страха и тревоги.</li>
+          <li>Игнорирования собственных потребностей.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Аффирмации новолуния</h3>
+    <ul class="affirm">
+      <li>Я открыта новым возможностям</li><li>Я доверяю своему пути</li><li>Я разрешаю себе мечтать масштабно</li><li>Я достойна счастливой и наполненной жизни</li><li>Я выбираю то, что действительно хочу</li><li>Я создаю пространство для нового</li><li>Мои намерения ясны, а действия осознанны</li>
+    </ul>
+
+    <h3>Ритуалы новолуния</h3>
+    <article class="ritual">
+      <h4>Посев желаний</h4>
+      <div class="need"><b>Понадобится</b>белая свеча, лист бумаги, ручка</div>
+      <ol class="steps">
+        <li>Зажгите свечу.</li>
+        <li>Устройтесь удобно и успокойте дыхание.</li>
+        <li>Запишите 3–5 желаний на новый лунный цикл.</li>
+        <li>Формулируйте их позитивно, конкретно и от первого лица.</li>
+        <li>Прочитайте каждое желание вслух.</li>
+        <li>Представьте, что вы уже движетесь к желаемому.</li>
+      </ol>
+      <p>Примеры намерений:</p>
+      <div class="spell">«Я открываю себя для взаимной любви. Я выбираю отношения, наполненные нежностью, уважением, страстью и заботой».
+«Я развиваю своё дело, проявляю таланты и увеличиваю доход через любимую деятельность».</div>
+      <p>В конце спросите себя: <b>какой первый шаг я могу сделать уже завтра?</b></p>
+    </article>
+    <article class="ritual">
+      <h4>Свеча нового начала</h4>
+      <div class="need"><b>Понадобится</b>белая свеча, лист бумаги, ручка</div>
+      <p>Запишите, что хотите пригласить в свою жизнь. Зажгите свечу и произнесите:</p>
+      <div class="spell">«Я открываю двери новому. Я отпускаю сомнения, выбираю свой путь и позволяю своим желаниям обрести форму. Пусть мои намерения станут началом прекрасных перемен».</div>
+      <p>Посидите несколько минут в тишине, представляя желаемые перемены.</p>
+    </article>
+    <article class="ritual">
+      <h4>Медитация на желаемую реальность</h4>
+      <p>Закройте глаза, расслабьтесь и представьте свою жизнь через год. Где вы живёте? Какие люди вас окружают? Какие отношения строите? Чем занимаетесь? Как себя чувствуете?</p>
+      <p>Представьте, что вы уже живёте той жизнью, к которой стремитесь. Почувствуйте благодарность, радость и уверенность. В завершение произнесите:</p>
+      <div class="spell">«Я открыта новым возможностям. Я выбираю свою счастливую реальность и готова создавать её своими действиями».</div>
+    </article>
+    <article class="ritual">
+      <h4>Три главных желания</h4>
+      <p>Выберите три сферы жизни и для каждой запишите одно, самое важное желание:</p>
+      <ol class="steps">
+        <li>Любовь и отношения.</li>
+        <li>Деньги и реализация.</li>
+        <li>Личность, тело и духовное развитие.</li>
+      </ol>
+      <p>Не распыляйтесь на десятки целей. Выберите то, что действительно имеет для вас значение.</p>
+    </article>
+    <div class="task"><span class="tag">Задание</span><p>В ближайшее новолуние откройте новую страницу лунного дневника и ответьте на два вопроса: <i>Чего я действительно хочу? Какую жизнь я хочу создавать?</i></p></div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><svg viewBox="0 0 120 20"><use href="#orn"/></svg></div>
+
+<!-- IV. Растущая -->
+<section class="chapter" id="waxing">
+  <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-wxc"/></svg><div class="num">IV</div></div>
+  <div class="chapter-body prose">
+    <div class="chapter-head">
+      <div class="eyebrow">Глава четвёртая</div>
+      <h2>Растущая Луна — время привлечения и роста</h2>
+      <p class="energy">Энергия периода: развитие, движение, приумножение, притяжение</p>
+    </div>
+    <p>После новолуния появляется тонкий лунный серп. В эзотерической традиции его связывают с постепенным накоплением силы и развитием намерений.</p>
+    <blockquote class="quote">Если в новолуние мы закладываем семена, то на растущей Луне начинаем ухаживать за ними. Это время не только мечтать, но и действовать.</blockquote>
+
+    <h3>Как может ощущаться этот период</h3>
+    <ul class="dots">
+      <li>появляется желание действовать и мотивация развиваться;</li>
+      <li>возникает интерес к новым знакомствам и проектам;</li>
+      <li>хочется менять внешность;</li>
+      <li>усиливается желание проявляться и общаться.</li>
+    </ul>
+
+    <h3>Что рекомендуется делать</h3>
+    <div class="cols">
+      <div class="box"><h4>Для денег</h4><ul class="dots"><li>запускать проекты;</li><li>искать клиентов;</li><li>развивать личный бренд;</li><li>повышать стоимость услуг;</li><li>искать новые источники дохода.</li></ul></div>
+      <div class="box"><h4>Для любви</h4><ul class="dots"><li>знакомиться;</li><li>ходить на свидания;</li><li>проявлять инициативу;</li><li>открываться отношениям;</li><li>укреплять существующую связь.</li></ul></div>
+      <div class="box"><h4>Для красоты</h4><ul class="dots"><li>начинать курс ухода;</li><li>обновлять образ;</li><li>уделять внимание волосам и коже;</li><li>заниматься телом;</li><li>посещать косметолога.</li></ul></div>
+      <div class="box"><h4>Для развития</h4><ul class="dots"><li>учиться;</li><li>осваивать новые навыки;</li><li>расширять круг общения;</li><li>начинать полезные привычки.</li></ul></div>
+    </div>
+
+    <h3>Стрижка волос на растущую Луну</h3>
+    <p>В народных лунных календарях растущую Луну традиционно выбирают для стрижки, если хочется быстрее отрастить волосы. Можно подстричь кончики, обновить форму или начать новый курс ухода.</p>
+    <p class="note">Это эзотерическое поверье, а не научно доказанный способ ускорить рост волос.</p>
+
+    <h3>Аффирмации растущей Луны</h3>
+    <ul class="affirm">
+      <li>Всё хорошее в моей жизни приумножается</li><li>Я открыта новым возможностям</li><li>Я позволяю себе расти и развиваться</li><li>Я достойна любви и изобилия</li><li>Мои таланты приносят мне достойное вознаграждение</li><li>Я смело проявляю себя</li>
+    </ul>
+
+    <h3>Ритуалы растущей Луны</h3>
+    <article class="ritual">
+      <h4>На приумножение денег</h4>
+      <div class="need"><b>Понадобится</b>зелёная свеча, монета, лист бумаги</div>
+      <p>Запишите финансовую цель. Зажгите свечу, положите рядом монету и произнесите:</p>
+      <div class="spell">«Как растёт Луна на небосводе, так растут мои возможности, доходы и благополучие. Я замечаю возможности и смело действую».</div>
+      <p>Монету положите в кошелёк как символ своего намерения.</p>
+    </article>
+    <article class="ritual">
+      <h4>На привлечение новых возможностей</h4>
+      <p>Напишите три возможности, которые хотите пригласить в жизнь. Например: новые клиенты, интересная работа, полезные знакомства.</p>
+      <p>Рядом с каждой запишите конкретное действие, которое поможет её приблизить.</p>
+    </article>
+    <article class="ritual">
+      <h4>На красоту и обновление</h4>
+      <p>Выберите любимое средство ухода за телом. Во время ухода произносите:</p>
+      <div class="spell">«Я люблю своё тело. Я забочусь о себе. Я разрешаю себе быть красивой, здоровой, чувственной и счастливой».</div>
+      <p>Сделайте этот вечер символом внимания к своей женственности.</p>
+    </article>
+    <div class="task"><span class="tag">Задание</span><p>На растущей Луне ответьте в дневнике: <i>Какие действия я предпринимаю? Что помогает мне двигаться вперёд?</i></p></div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><svg viewBox="0 0 120 20"><use href="#orn"/></svg></div>
+
+<!-- V. Полнолуние -->
+<section class="chapter" id="full">
+  <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-full"/></svg><div class="num">V</div></div>
+  <div class="chapter-body prose">
+    <div class="chapter-head">
+      <div class="eyebrow">Глава пятая</div>
+      <h2>Полнолуние — время силы и проявления</h2>
+      <p class="energy">Энергия периода: кульминация, раскрытие, эмоции, благодарность, результаты</p>
+    </div>
+    <p>Полнолуние наступает, когда видимая сторона Луны полностью освещена Солнцем. В эзотерических традициях это один из самых сильных символических периодов цикла.</p>
+    <p>Если новолуние — время посева, то полнолуние — время увидеть, что выросло.</p>
+
+    <h3>Полнолуние — время, когда штормит</h3>
+    <p>В эзотерических представлениях полнолуние связывают с эмоциональной кульминацией. Иногда особенно сложно встречаться с полнотой собственных чувств, эмоций и желаний.</p>
+    <p>То, что долго находилось внутри, может потребовать внимания. Невысказанные обиды, подавленные желания, внутренние противоречия и накопившееся напряжение становятся заметнее.</p>
+
+    <div class="figure-wide">
+      <figure class="arch" style="margin:0"><img src="photo-2.jpg" alt="Женщина с закрытыми глазами под алой прозрачной тканью на фоне неба" loading="lazy"></figure>
+      <blockquote class="quote" style="margin:0">Полнолуние — это не только про магию, исполнение желаний и изобилие. Это ещё и возможность встретиться с собой настоящей.<cite>Фиалка</cite></blockquote>
+    </div>
+
+    <h3>Как может ощущаться полнолуние</h3>
+    <ul class="dots">
+      <li>эмоциональная чувствительность и впечатлительность;</li>
+      <li>яркие сновидения;</li>
+      <li>внутреннее напряжение, обострение переживаний;</li>
+      <li>прилив творческого вдохновения;</li>
+      <li>желание перемен;</li>
+      <li>стремление разобраться в отношениях.</li>
+    </ul>
+    <p class="note">Это символические трактовки, а не обязательная реакция организма на полнолуние.</p>
+
+    <div class="cols">
+      <div class="box">
+        <h4>Что рекомендуется</h4>
+        <ol class="steps">
+          <li>Благодарить за всё, что уже есть.</li>
+          <li>Подводить итоги прошедшего цикла.</li>
+          <li>Записывать достигнутые результаты.</li>
+          <li>Практики на любовь и привлекательность.</li>
+          <li>Работать с женственностью и чувственностью.</li>
+          <li>Ритуалы на изобилие и финансовые намерения.</li>
+          <li>Медитация и телесные практики.</li>
+          <li>Очищать пространство.</li>
+          <li>Работать с эмоциями, отпускать обиды.</li>
+          <li>Отдыхать и восстанавливаться.</li>
+        </ol>
+      </div>
+      <div class="box avoid">
+        <h4>Чего лучше избегать</h4>
+        <ul class="dots">
+          <li>Импульсивных решений.</li>
+          <li>Конфликтов из-за накопившихся эмоций.</li>
+          <li>Перегрузки большим количеством практик.</li>
+          <li>Попыток контролировать других людей.</li>
+          <li>Желания немедленно изменить всё в жизни.</li>
+        </ul>
+      </div>
+    </div>
+
+    <blockquote class="quote">Не каждое полнолуние требует магического действия. Иногда самая сильная практика — остановиться, почувствовать и услышать себя.<cite>Моя рекомендация</cite></blockquote>
+
+    <h3>Аффирмации полнолуния</h3>
+    <ul class="affirm">
+      <li>Я разрешаю себе сиять</li><li>Я открыта любви, счастью и изобилию</li><li>Я благодарю за всё, что уже есть</li><li>Я достойна получать желаемое</li><li>Я принимаю свою силу и женственность</li><li>Я отпускаю то, что больше не соответствует моему пути</li><li>Я выбираю проявляться и занимать своё место в мире</li>
+    </ul>
+    <div class="task"><span class="tag">Задание</span><p>В полнолуние ответьте в дневнике: <i>Что проявилось в моей жизни? Какие результаты я могу отметить?</i></p></div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><svg viewBox="0 0 120 20"><use href="#orn"/></svg></div>
+
+<!-- VI. Ритуалы полнолуния -->
+<section class="chapter" id="full-rituals">
+  <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-full"/></svg><div class="num">VI</div></div>
+  <div class="chapter-body prose">
+    <div class="chapter-head">
+      <div class="eyebrow">Глава шестая</div>
+      <h2>Ритуалы полнолуния</h2>
+      <p class="energy">Выбирайте практики по своему запросу. Необязательно выполнять все ритуалы за один вечер.</p>
+    </div>
+
+    <div class="group-title"><span>А</span>Любовь, женственность и привлекательность</div>
+    <article class="ritual">
+      <h4>Обряд на женский магнетизм и красоту</h4>
+      <div class="credit">Автор исходного обряда: Draganna</div>
+      <div class="need" style="margin-top:10px"><b>Понадобится</b>красная свеча, красная нить, эфирное масло корицы, зеркало. Дополнительно можно использовать масла розы и красного апельсина.</div>
+      <p><b>Подготовка.</b> Примите расслабляющую ванну с морской солью. Наденьте красивую одежду, в которой чувствуете себя привлекательной, или проводите практику обнажённой, если вам комфортно. Распустите волосы. Создайте атмосферу уюта.</p>
+      <ol class="steps">
+        <li>Зажгите красную свечу.</li>
+        <li>Посмотрите на своё отражение в зеркале.</li>
+        <li>Представьте себя уверенной, красивой, чувственной и притягательной женщиной.</li>
+        <li>Трижды произнесите заговор:</li>
+      </ol>
+      <div class="spell">«Как Луна полна светом, так и я светом полна.
+Как пламя свечи пылает, так и моя красота сияет.
+Привлекая взгляды, пробуждая интерес.
+Моя красота расцветает, привлекательность возрастает.
+Да будет так!»</div>
+      <ol class="steps" start="5">
+        <li>Возьмите красную нить и завяжите три узелка по часовой стрелке. На каждый узел произнесите заговор.</li>
+        <li>Сохраните нить как символ намерения.</li>
+      </ol>
+      <p class="muted">Обряд можно повторять в каждое полнолуние.</p>
+    </article>
+    <article class="ritual">
+      <h4>Ритуал на привлечение любви</h4>
+      <div class="need"><b>Понадобится</b>лист бумаги, ручка, стакан чистой питьевой воды</div>
+      <p>На листе напишите:</p>
+      <div class="spell">«Я обаятельная личность. От меня исходит внутренний свет обаяния, любви и чувственности. Я сияющая, женственная и привлекательная женщина. Я открыта взаимной любви. Мой мужчина находит меня, а я с лёгкостью узнаю его. Я выбираю отношения, в которых есть любовь, уважение, нежность, страсть и взаимность».</div>
+      <ol class="steps">
+        <li>Соедините ладони в намасте перед грудью.</li>
+        <li>Потрите ладони друг о друга, пока не почувствуете тепло.</li>
+        <li>Разведите ладони и представьте между ними светящийся шар.</li>
+        <li>Поместите стакан между ладонями, не касаясь его.</li>
+        <li>Осознанно прочитайте написанные слова.</li>
+        <li>Поставьте стакан на подоконник на ночь.</li>
+        <li>Утром снова произнесите своё намерение и выпейте воду.</li>
+      </ol>
+    </article>
+    <article class="ritual">
+      <h4>Ритуал на раскрытие чувственности</h4>
+      <div class="need"><b>Понадобится</b>розовая свеча, любимое масло для тела, зеркало</div>
+      <p>Зажгите свечу, посмотрите на себя в зеркало и нанесите масло на тело. Не оценивайте своё тело. Благодарите его за всё, что оно позволяет вам чувствовать. Произнесите:</p>
+      <div class="spell">«Я принимаю своё тело. Я разрешаю себе чувствовать удовольствие. Я раскрываю свою чувственность. Я люблю свою женскую природу. Мне можно быть красивой, желанной и счастливой».</div>
+    </article>
+    <article class="ritual">
+      <h4>Освобождение от прошлого в отношениях</h4>
+      <div class="need"><b>Понадобится</b>белая свеча, бумага, ручка</div>
+      <p>Запишите всё, что больше не хотите переносить в будущие отношения: обиды, страх предательства, зависимость, привычку терпеть, неуверенность. Прочитайте написанное и произнесите:</p>
+      <div class="spell">«Я признаю свой прошлый опыт. Я благодарю себя за пройденный путь. Я освобождаюсь от того, что больше не хочу нести. Я выбираю отношения, в которых есть взаимность и любовь».</div>
+      <p>Бумагу порвите и выбросьте.</p>
+    </article>
+
+    <div class="group-title"><span>Б</span>Деньги и изобилие</div>
+    <article class="ritual">
+      <h4>Финансовое изобилие с зелёными свечами</h4>
+      <div class="need"><b>Понадобится</b>три зелёные свечи или скрутка из вощины, тимьян, эфирное масло пачули, по желанию гвоздика и иланг-иланг, благовония со сладким ароматом</div>
+      <p><b>Первый этап. Очищение денежных установок.</b> Сядьте с закрытыми глазами. По желанию зажгите отдельную чёрную свечу как символ освобождения от старых установок. Произнесите:</p>
+      <div class="spell">«Блоки, страхи с себя снимаю,
+Сознание и подсознание очищаю.
+Да будет так!»</div>
+      <p>Представьте, что стоите под водопадом. Поток чистой воды символически смывает ограничения, страхи и убеждения, которые мешают вам проявляться и зарабатывать.</p>
+      <p><b>Второй этап. Привлечение изобилия.</b> Подготовьте свечи или скрутку из вощины с травами. Зажгите свечу и трижды произнесите:</p>
+      <div class="spell">«Удачу к себе привлекаю,
+Денежные возможности зазываю,
+Все процессы ускоряю.
+Деньги со всех сторон стекаются,
+Мои карманы деньгами наполняются».</div>
+      <p>Закройте глаза и представьте, как золотистые потоки направляются к вам со всех сторон. Визуализируйте новые источники дохода, успешные проекты, клиентов и финансовые возможности. Поблагодарите за то, что уже имеете.</p>
+    </article>
+    <article class="ritual">
+      <h4>Изобилие с зелёной свечой</h4>
+      <div class="need"><b>Понадобится</b>зелёная свеча, лист бумаги, ручка</div>
+      <p>Запишите финансовые цели и желания. Посмотрите на пламя свечи и произнесите:</p>
+      <div class="spell">«Свет Луны приносит изобилие и благополучие в мою жизнь. Я открыта новым возможностям, достойному вознаграждению и финансовому процветанию. Я замечаю возможности и смело действую».</div>
+      <p>Представьте реализацию своих целей. Оригинал списка можно сохранить, а отдельную копию символически сжечь в огнестойкой ёмкости.</p>
+    </article>
+    <article class="ritual">
+      <h4>Денежный поток с водой</h4>
+      <div class="need"><b>Понадобится</b>стакан чистой питьевой воды, лист бумаги, зелёная свеча</div>
+      <p>Напишите:</p>
+      <div class="spell">«Я открыта денежному потоку. Мои способности приносят мне достойный доход. Я умею принимать деньги, сохранять их и приумножать».</div>
+      <p>Поставьте стакан на лист с намерением. Зажгите свечу, прочитайте текст трижды и представьте золотой свет вокруг стакана. Утром прочитайте намерение ещё раз и выпейте воду.</p>
+    </article>
+    <article class="ritual">
+      <h4>На увеличение дохода</h4>
+      <p>Разделите лист бумаги на три части и ответьте:</p>
+      <ol class="steps">
+        <li>Какой доход я хочу получать?</li>
+        <li>Какие возможности помогут мне этого достичь?</li>
+        <li>Какие три действия я могу сделать уже сейчас?</li>
+      </ol>
+      <p>Зажгите зелёную свечу и произнесите:</p>
+      <div class="spell">«Я разрешаю себе зарабатывать больше. Я ценю свои способности, смело проявляюсь и принимаю достойное вознаграждение за свой труд».</div>
+    </article>
+
+    <div class="group-title"><span>В</span>Желания и исполнение намерений</div>
+    <article class="ritual">
+      <h4>Желание с лунной водой</h4>
+      <div class="need"><b>Понадобится</b>лист бумаги, ручка, стакан чистой питьевой воды</div>
+      <ol class="steps">
+        <li>Напишите своё самое заветное желание.</li>
+        <li>Положите лист на подоконник.</li>
+        <li>Сверху поставьте стакан с водой.</li>
+        <li>Посмотрите на Луну. Если она скрыта облаками, это не мешает провести символический ритуал.</li>
+        <li>Трижды произнесите:</li>
+      </ol>
+      <div class="spell">«Как Луна силой наполнена, так и моё желание будет исполнено».</div>
+      <p>Представьте, как лунный свет наполняет пространство вокруг стакана. Оставьте на ночь. Утром перечитайте желание и выпейте воду.</p>
+    </article>
+    <article class="ritual">
+      <h4>Три желания</h4>
+      <p>Запишите три желания: одно для себя, одно для любви и отношений, одно для финансового благополучия. Представьте, что каждое постепенно становится частью вашей жизни. Произнесите:</p>
+      <div class="spell">«Я открыта благоприятным возможностям и готова сделать шаги навстречу своим желаниям».</div>
+    </article>
+
+    <div class="group-title"><span>Г</span>Очищение и освобождение</div>
+    <article class="ritual">
+      <h4>Отпускание старого</h4>
+      <div class="need"><b>Понадобится</b>белая свеча, бумага, ручка</div>
+      <p>Напишите всё, от чего хотите освободиться: страхи, обиды, сомнения, привычки и ограничения. Прочитайте и произнесите:</p>
+      <div class="spell">«Я благодарю свой опыт, но больше не обязана жить в его тени. Я отпускаю прошлое и освобождаю место для нового».</div>
+      <p>Порежьте или порвите бумагу.</p>
+    </article>
+    <article class="ritual">
+      <h4>Очищение пространства</h4>
+      <p>Проветрите дом, сделайте влажную уборку, избавьтесь от ненужных вещей. Можно использовать благовония, если они вам приятны. Во время уборки произносите:</p>
+      <div class="spell">«Я освобождаю своё пространство от всего лишнего. Здесь есть место любви, гармонии, достатку и радости».</div>
+    </article>
+    <article class="ritual">
+      <h4>Ритуал благодарности</h4>
+      <p>Запишите 20 вещей, за которые вы благодарны: люди, события, возможности, здоровье, тело, дом, работа, путешествия и маленькие радости. В конце произнесите:</p>
+      <div class="spell">«Я вижу изобилие, которое уже присутствует в моей жизни. Я благодарю за полученное и открываюсь новым благам».</div>
+    </article>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><svg viewBox="0 0 120 20"><use href="#orn"/></svg></div>
+
+<!-- VII. Убывающая -->
+<section class="chapter" id="waning">
+  <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-wng"/></svg><div class="num">VII</div></div>
+  <div class="chapter-body prose">
+    <div class="chapter-head">
+      <div class="eyebrow">Глава седьмая</div>
+      <h2>Убывающая Луна — время отпускать</h2>
+      <p class="energy">Энергия периода: очищение, завершение, освобождение, восстановление</p>
+    </div>
+    <p>После полнолуния видимая часть Луны начинает уменьшаться. В эзотерической традиции убывающую Луну связывают с освобождением пространства от всего, что больше не нужно.</p>
+    <blockquote class="quote">Если на растущей Луне мы привлекаем, то на убывающей — отпускаем.</blockquote>
+
+    <h3>Как может ощущаться этот период</h3>
+    <ul class="dots">
+      <li>желание уединиться;</li>
+      <li>стремление навести порядок;</li>
+      <li>потребность завершить старые дела;</li>
+      <li>желание пересмотреть окружение;</li>
+      <li>усталость от чрезмерной активности;</li>
+      <li>потребность в эмоциональном освобождении.</li>
+    </ul>
+
+    <div class="cols">
+      <div class="box">
+        <h4>Что рекомендуется</h4>
+        <ol class="steps">
+          <li>Завершать старые дела.</li>
+          <li>Отпускать обиды и прошлые привязанности.</li>
+          <li>Пересматривать расходы.</li>
+          <li>Закрывать долги и ненужные обязательства.</li>
+          <li>Очищать пространство.</li>
+          <li>Избавляться от ненужных вещей.</li>
+          <li>Принимать расслабляющие ванны.</li>
+          <li>Заниматься медитацией.</li>
+          <li>Вести дневник.</li>
+          <li>Отдыхать и восстанавливать силы.</li>
+        </ol>
+      </div>
+      <div class="box avoid">
+        <h4>Чего лучше избегать</h4>
+        <ul class="dots">
+          <li>Начинать множество проектов одновременно.</li>
+          <li>Цепляться за завершённые отношения.</li>
+          <li>Возвращаться к старым сценариям из страха одиночества.</li>
+          <li>Перегружать себя обязательствами.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Аффирмации убывающей Луны</h3>
+    <ul class="affirm">
+      <li>Я легко отпускаю то, что больше мне не служит</li><li>Я освобождаюсь от старых ограничений</li><li>Я выбираю себя</li><li>Я благодарю прошлое за опыт</li><li>Я освобождаю место для нового</li><li>Я доверяю естественному ходу жизни</li>
+    </ul>
+
+    <h3>Ритуалы убывающей Луны</h3>
+    <article class="ritual">
+      <h4>Освобождение от страхов</h4>
+      <p>Напишите свои страхи на листе бумаги. Рядом напишите, что вы можете сделать, чтобы они перестали управлять вашей жизнью. Прочитайте:</p>
+      <div class="spell">«Я вижу свои страхи, но больше не отдаю им власть над собой. Я выбираю свободу, доверие и внутреннюю силу».</div>
+      <p>Порежьте бумагу.</p>
+    </article>
+    <article class="ritual">
+      <h4>Соляная ванна очищения</h4>
+      <p>Добавьте в ванну морскую соль, если она подходит вашей коже. Представьте, что вода помогает вам расслабиться и символически смывает накопившееся напряжение.</p>
+    </article>
+    <article class="ritual">
+      <h4>Ритуал завершения</h4>
+      <p>Составьте список из пяти незавершённых дел. Выберите одно и завершите его в течение ближайших суток.</p>
+    </article>
+    <article class="ritual">
+      <h4>Освобождение от старых привязанностей</h4>
+      <p>Напишите письмо человеку или ситуации, с которыми хотите внутренне попрощаться. Отправлять его не обязательно. Напишите всё, что не удалось сказать, а затем уберите письмо или уничтожьте его.</p>
+    </article>
+    <div class="task"><span class="tag">Задание</span><p>На убывающей Луне ответьте в дневнике: <i>Что я готова отпустить? Что больше не хочу переносить в следующий цикл?</i></p></div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><svg viewBox="0 0 120 20"><use href="#orn"/></svg></div>
+
+<!-- VIII. Шпаргалка -->
+<section class="chapter" id="cheatsheet">
+  <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-lq"/></svg><div class="num">VIII</div></div>
+  <div class="chapter-body">
+    <div class="chapter-head prose">
+      <div class="eyebrow">Глава восьмая</div>
+      <h2>Что благоприятно делать в разные фазы</h2>
+      <p class="energy">Короткая шпаргалка по всему циклу</p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Фаза</th><th>Главное</th><th>Благоприятно</th><th>Лучше отложить</th></tr></thead>
+        <tbody>
+          <tr><td>Новолуние</td><td>Я выбираю, чего хочу</td><td>Намерения, планы на месяц, дневник желаний, медитации, начало обучения, отдых</td><td>Перегрузку, много новых обязательств, импульсивные решения</td></tr>
+          <tr><td>Растущая Луна</td><td>Я действую и привлекаю</td><td>Запуск проектов, поиск клиентов, свидания, курс ухода, стрижка, новые навыки и привычки</td><td>Бездействие: время не только мечтать, но и делать</td></tr>
+          <tr><td>Полнолуние</td><td>Я проявляюсь и благодарю</td><td>Благодарность, итоги цикла, практики на любовь, женственность и изобилие, работа с эмоциями</td><td>Импульсивные решения, конфликты, перегрузку практиками, контроль других</td></tr>
+          <tr><td>Убывающая Луна</td><td>Я отпускаю и освобождаю место</td><td>Завершение дел, расхламление, пересмотр расходов, закрытие долгов, ванны, дневник, отдых</td><td>Много новых проектов сразу, возврат к завершённым отношениям</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><svg viewBox="0 0 120 20"><use href="#orn"/></svg></div>
+
+<!-- IX. Намерения и дневник -->
+<section class="chapter" id="intentions">
+  <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-wnc"/></svg><div class="num">IX</div></div>
+  <div class="chapter-body prose">
+    <div class="chapter-head">
+      <div class="eyebrow">Глава девятая</div>
+      <h2>Как работать с намерениями и вести лунный дневник</h2>
+    </div>
+
+    <h3>Как формулировать намерения</h3>
+    <ol class="steps">
+      <li><b>Позитивно.</b> Пишите о том, что приглашаете, а не о том, от чего бежите.</li>
+      <li><b>Конкретно.</b> Чем яснее желание, тем проще увидеть первый шаг к нему.</li>
+      <li><b>От первого лица</b>, в настоящем времени: «Я открываю…», «Я развиваю…», «Я выбираю…».</li>
+      <li><b>Без распыления.</b> Три–пять желаний на цикл или по одному в каждой из трёх сфер: любовь, деньги и реализация, личность и тело.</li>
+      <li><b>С первым шагом.</b> Под каждым намерением запишите действие, которое можно сделать уже завтра.</li>
+      <li><b>Без давления на других.</b> Намерение говорит о вас и ваших выборах, а не о чужой воле.</li>
+    </ol>
+
+    <h3>Лунный дневник</h3>
+    <p>Наблюдайте за собой в течение всего лунного месяца. Каждое новолуние открывайте новую страницу. Записывайте:</p>
+    <ul class="dots">
+      <li>дату и фазу Луны;</li>
+      <li>своё эмоциональное состояние;</li>
+      <li>какие желания появились;</li>
+      <li>какие практики выполняли;</li>
+      <li>какие события происходили;</li>
+      <li>что удалось реализовать;</li>
+      <li>за что вы благодарны.</li>
+    </ul>
+
+    <h3>Вопросы для каждого этапа</h3>
+    <div class="cols">
+      <div class="box"><h4>Новолуние</h4><ul class="dots"><li>Чего я действительно хочу?</li><li>Какую жизнь я хочу создавать?</li></ul></div>
+      <div class="box"><h4>Растущая Луна</h4><ul class="dots"><li>Какие действия я предпринимаю?</li><li>Что помогает мне двигаться вперёд?</li></ul></div>
+      <div class="box"><h4>Полнолуние</h4><ul class="dots"><li>Что проявилось в моей жизни?</li><li>Какие результаты я могу отметить?</li></ul></div>
+      <div class="box"><h4>Убывающая Луна</h4><ul class="dots"><li>Что я готова отпустить?</li><li>Что больше не хочу переносить в следующий цикл?</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><svg viewBox="0 0 120 20"><use href="#orn"/></svg></div>
+
+<!-- X. Правила -->
+<section class="chapter" id="rules">
+  <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-new"/></svg><div class="num">X</div></div>
+  <div class="chapter-body prose">
+    <div class="chapter-head">
+      <div class="eyebrow">Глава десятая</div>
+      <h2>Важные правила лунных ритуалов</h2>
+    </div>
+    <ol class="steps">
+      <li>Не выполняйте ритуалы механически. Понимайте, зачем вы их делаете.</li>
+      <li>Формулируйте желания конкретно и позитивно.</li>
+      <li>Не направляйте практики на подавление чужой воли.</li>
+      <li>Не забывайте о реальных действиях после ритуалов.</li>
+      <li>Не нужно выполнять все практики одновременно.</li>
+      <li>Благодарите за то, что уже есть.</li>
+      <li>Наблюдайте за своими состояниями и записывайте изменения.</li>
+      <li>Доверяйте своим ощущениям, но не игнорируйте здравый смысл.</li>
+    </ol>
+    <div class="box" style="margin-top:24px">
+      <h4>Безопасность</h4>
+      <ul class="dots">
+        <li>Не наносите эфирные масла на фитиль и открытое пламя.</li>
+        <li>Ставьте свечи на устойчивую негорючую поверхность и не оставляйте их без присмотра.</li>
+        <li>Для ритуалов с водой берите только чистую питьевую воду. Не пейте воду, в которую попали эфирные масла, благовония или посторонние вещества.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><svg viewBox="0 0 120 20"><use href="#orn"/></svg></div>
+
+<!-- XI. Календарь -->
+<section class="chapter" id="calendar">
+  <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-wxc"/></svg><div class="num">XI</div></div>
+  <div class="chapter-body">
+    <div class="chapter-head prose">
+      <div class="eyebrow">Глава одиннадцатая</div>
+      <h2>Лунный календарь на 2027 год</h2>
+      <p class="energy">Все даты и время указаны по Москве (МСК, UTC+3)</p>
+    </div>
+    <div class="cal-legend">
+      <span><svg aria-hidden="true"><use href="#m-new"/></svg>Новолуние</span>
+      <span><svg aria-hidden="true"><use href="#m-fq"/></svg>Первая четверть</span>
+      <span><svg aria-hidden="true"><use href="#m-full"/></svg>Полнолуние</span>
+      <span><svg aria-hidden="true"><use href="#m-lq"/></svg>Последняя четверть</span>
+    </div>
+    <div class="cal">
+<div class="month"><h4>Январь<small>2027</small></h4>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-new"/></svg><span class="d">7</span><span class="n">Новолуние</span><span class="t">23:24</span></div>
+<div class="ev minor"><svg aria-hidden="true"><use href="#m-fq"/></svg><span class="d">15</span><span class="n">Первая четверть</span><span class="t">23:34</span></div>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-full"/></svg><span class="d">22</span><span class="n">Полнолуние</span><span class="t">15:17</span></div>
+<div class="ev minor"><svg aria-hidden="true"><use href="#m-lq"/></svg><span class="d">29</span><span class="n">Последняя четверть</span><span class="t">13:55</span></div>
+</div>
+<div class="month"><h4>Февраль<small>2027</small></h4>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-new"/></svg><span class="d">6</span><span class="n">Новолуние<span class="ecl">✦ кольцеобразное солнечное затмение</span></span><span class="t">18:56</span></div>
+<div class="ev minor"><svg aria-hidden="true"><use href="#m-fq"/></svg><span class="d">14</span><span class="n">Первая четверть</span><span class="t">10:58</span></div>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-full"/></svg><span class="d">21</span><span class="n">Полнолуние<span class="ecl">✦ полутеневое лунное затмение</span></span><span class="t">02:23</span></div>
+<div class="ev minor"><svg aria-hidden="true"><use href="#m-lq"/></svg><span class="d">28</span><span class="n">Последняя четверть</span><span class="t">08:16</span></div>
+</div>
+<div class="month"><h4>Март<small>2027</small></h4>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-new"/></svg><span class="d">8</span><span class="n">Новолуние</span><span class="t">12:29</span></div>
+<div class="ev minor"><svg aria-hidden="true"><use href="#m-fq"/></svg><span class="d">15</span><span class="n">Первая четверть</span><span class="t">19:25</span></div>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-full"/></svg><span class="d">22</span><span class="n">Полнолуние</span><span class="t">13:43</span></div>
+<div class="ev minor"><svg aria-hidden="true"><use href="#m-lq"/></svg><span class="d">30</span><span class="n">Последняя четверть</span><span class="t">03:53</span></div>
+</div>
+<div class="month"><h4>Апрель<small>2027</small></h4>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-new"/></svg><span class="d">7</span><span class="n">Новолуние</span><span class="t">02:51</span></div>
+<div class="ev minor"><svg aria-hidden="true"><use href="#m-fq"/></svg><span class="d">14</span><span class="n">Первая четверть</span><span class="t">01:56</span></div>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-full"/></svg><span class="d">21</span><span class="n">Полнолуние</span><span class="t">01:27</span></div>
+<div class="ev minor"><svg aria-hidden="true"><use href="#m-lq"/></svg><span class="d">28</span><span class="n">Последняя четверть</span><span class="t">23:17</span></div>
+</div>
+<div class="month"><h4>Май<small>2027</small></h4>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-new"/></svg><span class="d">6</span><span class="n">Новолуние</span><span class="t">13:58</span></div>
+<div class="ev minor"><svg aria-hidden="true"><use href="#m-fq"/></svg><span class="d">13</span><span class="n">Первая четверть</span><span class="t">07:43</span></div>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-full"/></svg><span class="d">20</span><span class="n">Полнолуние</span><span class="t">13:59</span></div>
+<div class="ev minor"><svg aria-hidden="true"><use href="#m-lq"/></svg><span class="d">28</span><span class="n">Последняя четверть</span><span class="t">16:57</span></div>
+</div>
+<div class="month"><h4>Июнь<small>2027</small></h4>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-new"/></svg><span class="d">4</span><span class="n">Новолуние</span><span class="t">22:40</span></div>
+<div class="ev minor"><svg aria-hidden="true"><use href="#m-fq"/></svg><span class="d">11</span><span class="n">Первая четверть</span><span class="t">13:56</span></div>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-full"/></svg><span class="d">19</span><span class="n">Полнолуние</span><span class="t">03:44</span></div>
+<div class="ev minor"><svg aria-hidden="true"><use href="#m-lq"/></svg><span class="d">27</span><span class="n">Последняя четверть</span><span class="t">07:54</span></div>
+</div>
+<div class="month"><h4>Июль<small>2027</small></h4>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-new"/></svg><span class="d">4</span><span class="n">Новолуние</span><span class="t">06:02</span></div>
+<div class="ev minor"><svg aria-hidden="true"><use href="#m-fq"/></svg><span class="d">10</span><span class="n">Первая четверть</span><span class="t">21:39</span></div>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-full"/></svg><span class="d">18</span><span class="n">Полнолуние<span class="ecl">✦ полутеневое лунное затмение</span></span><span class="t">18:44</span></div>
+<div class="ev minor"><svg aria-hidden="true"><use href="#m-lq"/></svg><span class="d">26</span><span class="n">Последняя четверть</span><span class="t">19:54</span></div>
+</div>
+<div class="month"><h4>Август<small>2027</small></h4>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-new"/></svg><span class="d">2</span><span class="n">Новолуние<span class="ecl">✦ полное солнечное затмение</span></span><span class="t">13:05</span></div>
+<div class="ev minor"><svg aria-hidden="true"><use href="#m-fq"/></svg><span class="d">9</span><span class="n">Первая четверть</span><span class="t">07:54</span></div>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-full"/></svg><span class="d">17</span><span class="n">Полнолуние<span class="ecl">✦ полутеневое лунное затмение</span></span><span class="t">10:28</span></div>
+<div class="ev minor"><svg aria-hidden="true"><use href="#m-lq"/></svg><span class="d">25</span><span class="n">Последняя четверть</span><span class="t">05:27</span></div>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-new"/></svg><span class="d">31</span><span class="n">Новолуние</span><span class="t">20:41</span></div>
+</div>
+<div class="month"><h4>Сентябрь<small>2027</small></h4>
+<div class="ev minor"><svg aria-hidden="true"><use href="#m-fq"/></svg><span class="d">7</span><span class="n">Первая четверть</span><span class="t">21:31</span></div>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-full"/></svg><span class="d">16</span><span class="n">Полнолуние</span><span class="t">02:03</span></div>
+<div class="ev minor"><svg aria-hidden="true"><use href="#m-lq"/></svg><span class="d">23</span><span class="n">Последняя четверть</span><span class="t">13:20</span></div>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-new"/></svg><span class="d">30</span><span class="n">Новолуние</span><span class="t">05:36</span></div>
+</div>
+<div class="month"><h4>Октябрь<small>2027</small></h4>
+<div class="ev minor"><svg aria-hidden="true"><use href="#m-fq"/></svg><span class="d">7</span><span class="n">Первая четверть</span><span class="t">14:47</span></div>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-full"/></svg><span class="d">15</span><span class="n">Полнолуние</span><span class="t">16:47</span></div>
+<div class="ev minor"><svg aria-hidden="true"><use href="#m-lq"/></svg><span class="d">22</span><span class="n">Последняя четверть</span><span class="t">20:29</span></div>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-new"/></svg><span class="d">29</span><span class="n">Новолуние</span><span class="t">16:36</span></div>
+</div>
+<div class="month"><h4>Ноябрь<small>2027</small></h4>
+<div class="ev minor"><svg aria-hidden="true"><use href="#m-fq"/></svg><span class="d">6</span><span class="n">Первая четверть</span><span class="t">10:59</span></div>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-full"/></svg><span class="d">14</span><span class="n">Полнолуние</span><span class="t">06:25</span></div>
+<div class="ev minor"><svg aria-hidden="true"><use href="#m-lq"/></svg><span class="d">21</span><span class="n">Последняя четверть</span><span class="t">03:48</span></div>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-new"/></svg><span class="d">28</span><span class="n">Новолуние</span><span class="t">06:24</span></div>
+</div>
+<div class="month"><h4>Декабрь<small>2027</small></h4>
+<div class="ev minor"><svg aria-hidden="true"><use href="#m-fq"/></svg><span class="d">6</span><span class="n">Первая четверть</span><span class="t">08:22</span></div>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-full"/></svg><span class="d">13</span><span class="n">Полнолуние</span><span class="t">19:08</span></div>
+<div class="ev minor"><svg aria-hidden="true"><use href="#m-lq"/></svg><span class="d">20</span><span class="n">Последняя четверть</span><span class="t">12:10</span></div>
+<div class="ev major"><svg aria-hidden="true"><use href="#m-new"/></svg><span class="d">27</span><span class="n">Новолуние</span><span class="t">23:12</span></div>
+</div>
+</div>
+<div class="lists"><div class="box"><h4 style="display:flex;gap:10px;align-items:center"><svg style="width:26px;height:26px" aria-hidden="true"><use href="#m-new"/></svg>Все новолуния 2027</h4><ol><li><b>7</b> января · 23:24</li><li><b>6</b> февраля · 18:56</li><li><b>8</b> марта · 12:29</li><li><b>7</b> апреля · 02:51</li><li><b>6</b> мая · 13:58</li><li><b>4</b> июня · 22:40</li><li><b>4</b> июля · 06:02</li><li><b>2</b> августа · 13:05</li><li><b>31</b> августа · 20:41</li><li><b>30</b> сентября · 05:36</li><li><b>29</b> октября · 16:36</li><li><b>28</b> ноября · 06:24</li><li><b>27</b> декабря · 23:12</li></ol></div><div class="box"><h4 style="display:flex;gap:10px;align-items:center"><svg style="width:26px;height:26px" aria-hidden="true"><use href="#m-full"/></svg>Все полнолуния 2027</h4><ol><li><b>22</b> января · 15:17</li><li><b>21</b> февраля · 02:23</li><li><b>22</b> марта · 13:43</li><li><b>21</b> апреля · 01:27</li><li><b>20</b> мая · 13:59</li><li><b>19</b> июня · 03:44</li><li><b>18</b> июля · 18:44</li><li><b>17</b> августа · 10:28</li><li><b>16</b> сентября · 02:03</li><li><b>15</b> октября · 16:47</li><li><b>14</b> ноября · 06:25</li><li><b>13</b> декабря · 19:08</li></ol></div></div>
+    <p class="cal-note">Время рассчитано астрономически и сверено с timeanddate.com для Москвы. В другом часовом поясе дата отдельных фаз может сдвинуться на день.</p>
+
+    <div class="cols prose" style="max-width:none">
+      <div class="box"><h4>Практики новолуний</h4><p style="margin:0">Намерения, желания, планирование, медитации, новые начинания.</p></div>
+      <div class="box"><h4>Практики полнолуний</h4><p style="margin:0">Любовь, женская привлекательность, изобилие, благодарность, подведение итогов, осознание и отпускание.</p></div>
+      <div class="box"><h4>Первые четверти</h4><p style="margin:0">Активные действия, развитие проектов, преодоление препятствий.</p></div>
+      <div class="box"><h4>Последние четверти</h4><p style="margin:0">Очищение, завершение, отпускание, прощение, восстановление.</p></div>
+    </div>
+
+    <h3>Особенные астрономические события 2027 года</h3>
+    <ul class="dots prose">
+      <li><b>6 февраля</b> — кольцеобразное солнечное затмение.</li>
+      <li><b>21 февраля</b> (по UTC — вечер 20 февраля) — полутеневое лунное затмение.</li>
+      <li><b>18 июля</b> — полутеневое лунное затмение.</li>
+      <li><b>2 августа</b> — полное солнечное затмение.</li>
+      <li><b>17 августа</b> — полутеневое лунное затмение.</li>
+    </ul>
+    <p class="note prose">В астрологических и эзотерических традициях периоды затмений символически связывают с переменами и переосмыслением. Это не предсказание обязательных событий. Затмения видны не из всех мест Земли.</p>
+  </div>
+</section>
+
+<section class="outro" id="outro">
+  <svg class="big" aria-hidden="true"><use href="#m-full"/></svg>
+  <div class="eyebrow">Слово автора</div>
+  <h2 style="margin:12px 0 28px">Луна как отражение нашей цикличности</h2>
+  <p>Луна проходит свой путь от темноты к свету, от тонкого серпа до полного раскрытия, а затем снова возвращается к тишине. В этом есть удивительная мудрость, которую мы можем перенести в собственную жизнь.</p>
+  <p>Мы не обязаны всегда быть сильными. Не обязаны постоянно достигать. Не обязаны всё время отдавать и создавать.</p>
+  <p>Иногда нам нужно остановиться. Иногда — посеять семена нового. Иногда — позволить себе сиять во всей своей силе. А иногда — отпустить всё лишнее и вернуться к себе.</p>
+  <p>Пусть лунные циклы станут для вас не ограничением, а возможностью лучше слышать себя. Вы сами создаёте свою жизнь. Луна может стать красивым символом, ориентиром и спутником на этом пути.</p>
+  <div class="sig">С любовью, Фиалка</div>
+</section>
+
+<footer class="footer">© Екатерина Фиалка · «Магия Луны. Как жить в гармонии с лунными циклами»<br>Изображения Луны созданы на основе визуализации NASA's Scientific Visualization Studio (данные LRO)</footer>
+
+</div>
+</body>
+</html>
