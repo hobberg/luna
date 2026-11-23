@@ -205,6 +205,24 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
 .lists .box li{padding:3px 0;break-inside:avoid}
 .lists .box li b{font-family:var(--display);font-weight:600;font-size:1.08rem}
 
+
+/* Сворачиваемые главы */
+.chapter-fold > summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:18px;align-items:center;margin-bottom:0;border-radius:10px}
+.chapter-fold > summary::-webkit-details-marker{display:none}
+.chapter-fold > summary > *{grid-column:1}
+.chapter-fold > summary .fold-icon{grid-column:2;grid-row:2;width:38px;height:38px;border:1px solid var(--line);border-radius:50%;position:relative;transition:transform .25s ease,border-color .2s}
+.chapter-fold > summary .fold-icon::before{content:"";position:absolute;left:50%;top:44%;width:9px;height:9px;border-right:1.5px solid var(--gold);border-bottom:1.5px solid var(--gold);transform:translate(-50%,-50%) rotate(45deg)}
+.chapter-fold[open] > summary .fold-icon{transform:rotate(180deg)}
+.chapter-fold > summary:hover h2{color:var(--lilac)}
+.chapter-fold > summary:hover .fold-icon{border-color:var(--gold)}
+.chapter-fold[open] > summary{margin-bottom:28px}
+.fold-body{animation:foldIn .35s ease}
+@keyframes foldIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.chapter{padding-block:34px 10px}
+.divider{padding-top:10px}
+.hero-after{padding-bottom:16px}
+@media (max-width:860px){.chapter{padding-block:26px 8px}.chapter-fold > summary .fold-icon{width:32px;height:32px}}
+
 /* Заключение */
 .outro{text-align:center;padding-block:80px 100px;max-width:44em;margin:0 auto}
 .outro svg.big{width:140px;height:140px;margin:0 auto 28px;filter:drop-shadow(0 0 36px var(--glow))}
@@ -254,35 +272,24 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
   </div>
 </div>
 
-<nav class="toc" aria-label="Содержание">
-  <div class="eyebrow">Содержание</div>
-  <ol>
-    <li><a href="#intro">Луна и наша цикличность</a></li>
-    <li><a href="#phases">Фазы Луны</a></li>
-    <li><a href="#new">Новолуние</a></li>
-    <li><a href="#waxing">Растущая Луна</a></li>
-    <li><a href="#full">Полнолуние</a></li>
-    <li><a href="#full-rituals">Ритуалы полнолуния</a></li>
-    <li><a href="#waning">Убывающая Луна</a></li>
-    <li><a href="#cheatsheet">Что делать в каждую фазу</a></li>
-    <li><a href="#rules">Правила лунных ритуалов</a></li>
-    <li><a href="#calendar">Лунный календарь 2027</a></li>
-    <li><a href="#outro">Слово автора</a></li>
-  </ol>
-</nav>
+
 
 <!-- I. Введение -->
 <section class="chapter" id="intro">
   <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-wnc"/></svg><div class="num">I</div></div>
   <div class="chapter-body prose">
-    <div class="chapter-head">
+    <details class="chapter-fold">
+    <summary class="chapter-head">
       <div class="eyebrow">Введение</div>
       <h2>Луна и наша цикличность</h2>
-    </div>
+    <span class="fold-icon" aria-hidden="true"></span></summary>
+    <div class="fold-body">
     <p>Лунный цикл длится приблизительно <b>29,5 суток</b>. За это время Луна проходит восемь основных фаз: от тонкого серпа к полному свету и снова к тишине.</p>
     <p>В эзотерической традиции у каждой фазы своя символика и своя направленность. Сам цикл можно воспринимать как отражение жизненных процессов: рождения, роста, проявления, завершения и обновления.</p>
     <blockquote class="quote">Мы не можем постоянно находиться на пике. Есть время расти, время проявляться, время собирать плоды и время отдыхать.<cite>Фиалка</cite></blockquote>
     <p>Этот гайд поможет вам замечать свой ритм, ставить намерения в правильный момент и бережно отпускать лишнее.</p>
+    </div>
+    </details>
   </div>
 </section>
 
@@ -292,11 +299,13 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
 <section class="chapter" id="phases">
   <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-new"/></svg><div class="num">II</div></div>
   <div class="chapter-body">
-    <div class="chapter-head prose">
+    <details class="chapter-fold">
+    <summary class="chapter-head prose">
       <div class="eyebrow">Глава вторая</div>
       <h2>Фазы Луны и их влияние</h2>
       <p class="energy">Четыре главных этапа и восемь фаз внутри них</p>
-    </div>
+    <span class="fold-icon" aria-hidden="true"></span></summary>
+    <div class="fold-body">
 
     <h3>Главный принцип лунного цикла</h3>
     <div class="principle">
@@ -317,6 +326,8 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
       <div class="phase-card"><svg aria-hidden="true"><use href="#m-lq"/></svg><div><h4><small>Фаза 7</small>Третья четверть — прощание</h4><p>Переходный период: прощение, отпускание старого и реорганизация жизни.</p><div class="themes">Темы: освобождение от обид, завершение отношений и процессов, внутренние перемены.</div></div></div>
       <div class="phase-card"><svg aria-hidden="true"><use href="#m-wnc"/></svg><div><h4><small>Фаза 8</small>Убывающий месяц — восстановление</h4><p>Последний этап перед новым лунным циклом.</p><div class="themes">Темы: отдых, восстановление, уединение, рефлексия, подготовка к новому началу.</div></div></div>
     </div>
+    </div>
+    </details>
   </div>
 </section>
 
@@ -326,11 +337,13 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
 <section class="chapter" id="new">
   <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-new"/></svg><div class="num">III</div></div>
   <div class="chapter-body prose">
-    <div class="chapter-head">
+    <details class="chapter-fold">
+    <summary class="chapter-head">
       <div class="eyebrow">Глава третья</div>
       <h2>Новолуние — время внутрь</h2>
       <p class="energy">Энергия периода: тишина, обнуление, перезагрузка, новые намерения</p>
-    </div>
+    <span class="fold-icon" aria-hidden="true"></span></summary>
+    <div class="fold-body">
     <p>Новолуние открывает новый лунный цикл. В эзотерической традиции этот период связывают с внутренней работой, вниманием к себе и зарождением новых желаний.</p>
     <p>Это время чистого листа. Необязательно сразу бросаться в действия. <b>Сначала важно понять, чего вы действительно хотите.</b></p>
 
@@ -417,6 +430,8 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
       </ol>
       <p>Не распыляйтесь на десятки целей. Выберите то, что действительно имеет для вас значение.</p>
     </article>
+    </div>
+    </details>
   </div>
 </section>
 
@@ -426,11 +441,13 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
 <section class="chapter" id="waxing">
   <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-wxc"/></svg><div class="num">IV</div></div>
   <div class="chapter-body prose">
-    <div class="chapter-head">
+    <details class="chapter-fold">
+    <summary class="chapter-head">
       <div class="eyebrow">Глава четвёртая</div>
       <h2>Растущая Луна — время привлечения и роста</h2>
       <p class="energy">Энергия периода: развитие, движение, приумножение, притяжение</p>
-    </div>
+    <span class="fold-icon" aria-hidden="true"></span></summary>
+    <div class="fold-body">
     <p>После новолуния появляется тонкий лунный серп. В эзотерической традиции его связывают с постепенным накоплением силы и развитием намерений.</p>
     <blockquote class="quote">Если в новолуние мы закладываем семена, то на растущей Луне начинаем ухаживать за ними. Это время не только мечтать, но и действовать.</blockquote>
 
@@ -477,6 +494,8 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
       <div class="spell">«Я люблю своё тело. Я забочусь о себе. Я разрешаю себе быть красивой, здоровой, чувственной и счастливой».</div>
       <p>Сделайте этот вечер символом внимания к своей женственности.</p>
     </article>
+    </div>
+    </details>
   </div>
 </section>
 
@@ -486,11 +505,13 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
 <section class="chapter" id="full">
   <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-full"/></svg><div class="num">V</div></div>
   <div class="chapter-body prose">
-    <div class="chapter-head">
+    <details class="chapter-fold">
+    <summary class="chapter-head">
       <div class="eyebrow">Глава пятая</div>
       <h2>Полнолуние — время силы и проявления</h2>
       <p class="energy">Энергия периода: кульминация, раскрытие, эмоции, благодарность, результаты</p>
-    </div>
+    <span class="fold-icon" aria-hidden="true"></span></summary>
+    <div class="fold-body">
     <p>Полнолуние наступает, когда видимая сторона Луны полностью освещена Солнцем. В эзотерических традициях это один из самых сильных символических периодов цикла.</p>
     <p>Если новолуние — время посева, то полнолуние — время увидеть, что выросло.</p>
 
@@ -545,6 +566,8 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
     <ul class="affirm">
       <li>Я разрешаю себе сиять</li><li>Я открыта любви, счастью и изобилию</li><li>Я благодарю за всё, что уже есть</li><li>Я достойна получать желаемое</li><li>Я принимаю свою силу и женственность</li><li>Я отпускаю то, что больше не соответствует моему пути</li><li>Я выбираю проявляться и занимать своё место в мире</li>
     </ul>
+    </div>
+    </details>
   </div>
 </section>
 
@@ -554,11 +577,13 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
 <section class="chapter" id="full-rituals">
   <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-full"/></svg><div class="num">VI</div></div>
   <div class="chapter-body prose">
-    <div class="chapter-head">
+    <details class="chapter-fold">
+    <summary class="chapter-head">
       <div class="eyebrow">Глава шестая</div>
       <h2>Ритуалы полнолуния</h2>
       <p class="energy">Выбирайте практики по своему запросу. Необязательно выполнять все ритуалы за один вечер.</p>
-    </div>
+    <span class="fold-icon" aria-hidden="true"></span></summary>
+    <div class="fold-body">
 
     <div class="group-title"><span>А</span>Любовь, женственность и привлекательность</div>
     <article class="ritual">
@@ -693,6 +718,8 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
       <p>Запишите 20 вещей, за которые вы благодарны: люди, события, возможности, здоровье, тело, дом, работа, путешествия и маленькие радости. В конце произнесите:</p>
       <div class="spell">«Я вижу изобилие, которое уже присутствует в моей жизни. Я благодарю за полученное и открываюсь новым благам».</div>
     </article>
+    </div>
+    </details>
   </div>
 </section>
 
@@ -702,11 +729,13 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
 <section class="chapter" id="waning">
   <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-wng"/></svg><div class="num">VII</div></div>
   <div class="chapter-body prose">
-    <div class="chapter-head">
+    <details class="chapter-fold">
+    <summary class="chapter-head">
       <div class="eyebrow">Глава седьмая</div>
       <h2>Убывающая Луна — время отпускать</h2>
       <p class="energy">Энергия периода: очищение, завершение, освобождение, восстановление</p>
-    </div>
+    <span class="fold-icon" aria-hidden="true"></span></summary>
+    <div class="fold-body">
     <p>После полнолуния видимая часть Луны начинает уменьшаться. В эзотерической традиции убывающую Луну связывают с освобождением пространства от всего, что больше не нужно.</p>
     <blockquote class="quote">Если на растущей Луне мы привлекаем, то на убывающей — отпускаем.</blockquote>
 
@@ -771,6 +800,8 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
       <h4>Освобождение от старых привязанностей</h4>
       <p>Напишите письмо человеку или ситуации, с которыми хотите внутренне попрощаться. Отправлять его не обязательно. Напишите всё, что не удалось сказать, а затем уберите письмо или уничтожьте его.</p>
     </article>
+    </div>
+    </details>
   </div>
 </section>
 
@@ -780,11 +811,13 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
 <section class="chapter" id="cheatsheet">
   <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-lq"/></svg><div class="num">VIII</div></div>
   <div class="chapter-body">
-    <div class="chapter-head prose">
+    <details class="chapter-fold">
+    <summary class="chapter-head prose">
       <div class="eyebrow">Глава восьмая</div>
       <h2>Что благоприятно делать в разные фазы</h2>
       <p class="energy">Короткая шпаргалка по всему циклу</p>
-    </div>
+    <span class="fold-icon" aria-hidden="true"></span></summary>
+    <div class="fold-body">
     <div class="table-wrap">
       <table>
         <thead><tr><th>Фаза</th><th>Главное</th><th>Благоприятно</th><th>Лучше отложить</th></tr></thead>
@@ -796,6 +829,8 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
         </tbody>
       </table>
     </div>
+    </div>
+    </details>
   </div>
 </section>
 
@@ -805,10 +840,12 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
 <section class="chapter" id="rules">
   <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-new"/></svg><div class="num">IX</div></div>
   <div class="chapter-body prose">
-    <div class="chapter-head">
+    <details class="chapter-fold">
+    <summary class="chapter-head">
       <div class="eyebrow">Глава девятая</div>
       <h2>Важные правила лунных ритуалов</h2>
-    </div>
+    <span class="fold-icon" aria-hidden="true"></span></summary>
+    <div class="fold-body">
     <ol class="steps">
       <li>Не выполняйте ритуалы механически. Понимайте, зачем вы их делаете.</li>
       <li>Формулируйте желания конкретно и позитивно.</li>
@@ -827,6 +864,8 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
         <li>Для ритуалов с водой берите только чистую питьевую воду. Не пейте воду, в которую попали эфирные масла, благовония или посторонние вещества.</li>
       </ul>
     </div>
+    </div>
+    </details>
   </div>
 </section>
 
@@ -836,11 +875,13 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
 <section class="chapter" id="calendar">
   <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-wxc"/></svg><div class="num">X</div></div>
   <div class="chapter-body">
-    <div class="chapter-head prose">
+    <details class="chapter-fold">
+    <summary class="chapter-head prose">
       <div class="eyebrow">Глава десятая</div>
       <h2>Лунный календарь на 2027 год</h2>
       <p class="energy">Все даты и время указаны по Москве (МСК, UTC+3)</p>
-    </div>
+    <span class="fold-icon" aria-hidden="true"></span></summary>
+    <div class="fold-body">
     <div class="cal-legend">
       <span><svg aria-hidden="true"><use href="#m-new"/></svg>Новолуние</span>
       <span><svg aria-hidden="true"><use href="#m-fq"/></svg>Первая четверть</span>
@@ -925,6 +966,8 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
 <div class="lists"><div class="box"><h4 style="display:flex;gap:10px;align-items:center"><svg style="width:26px;height:26px" aria-hidden="true"><use href="#m-new"/></svg>Все новолуния 2027</h4><ol><li><b>7</b> января · 23:24</li><li><b>6</b> февраля · 18:56</li><li><b>8</b> марта · 12:29</li><li><b>7</b> апреля · 02:51</li><li><b>6</b> мая · 13:58</li><li><b>4</b> июня · 22:40</li><li><b>4</b> июля · 06:02</li><li><b>2</b> августа · 13:05</li><li><b>31</b> августа · 20:41</li><li><b>30</b> сентября · 05:36</li><li><b>29</b> октября · 16:36</li><li><b>28</b> ноября · 06:24</li><li><b>27</b> декабря · 23:12</li></ol></div><div class="box"><h4 style="display:flex;gap:10px;align-items:center"><svg style="width:26px;height:26px" aria-hidden="true"><use href="#m-full"/></svg>Все полнолуния 2027</h4><ol><li><b>22</b> января · 15:17</li><li><b>21</b> февраля · 02:23</li><li><b>22</b> марта · 13:43</li><li><b>21</b> апреля · 01:27</li><li><b>20</b> мая · 13:59</li><li><b>19</b> июня · 03:44</li><li><b>18</b> июля · 18:44</li><li><b>17</b> августа · 10:28</li><li><b>16</b> сентября · 02:03</li><li><b>15</b> октября · 16:47</li><li><b>14</b> ноября · 06:25</li><li><b>13</b> декабря · 19:08</li></ol></div></div>
 
     
+    </div>
+    </details>
   </div>
 </section>
 
