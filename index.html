@@ -223,6 +223,41 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
 .hero-after{padding-bottom:16px}
 @media (max-width:860px){.chapter{padding-block:26px 8px}.chapter-fold > summary .fold-icon{width:32px;height:32px}}
 
+
+/* Глава ритуалов */
+.chapter.featured .chapter-body{border:1px solid rgba(217,182,110,.38);border-radius:22px;padding:26px 28px;background:linear-gradient(160deg,rgba(217,182,110,.07),transparent 60%)}
+.chapter.featured h2{color:#F1DDAE}
+.chapter.featured .chapter-mark svg{filter:drop-shadow(0 0 30px rgba(241,221,174,.35))}
+.rit-intro{color:var(--muted)}
+.ritual-group{border:1px solid var(--line);border-radius:16px;margin:14px 0;background:var(--panel);scroll-margin-top:20px}
+.ritual-group > summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:34px minmax(0,1fr) auto 32px;gap:14px;align-items:center;padding:14px 16px}
+.ritual-group > summary::-webkit-details-marker{display:none}
+.ritual-group > summary > svg{width:34px;height:34px}
+.rg-title{font-family:var(--display);font-size:1.35rem;line-height:1.2}
+.rg-count{font-size:.78rem;letter-spacing:.08em;color:var(--gold);white-space:nowrap}
+.ritual-group > summary .fold-icon{width:32px;height:32px;border:1px solid var(--line);border-radius:50%;position:relative;transition:transform .25s ease}
+.ritual-group > summary .fold-icon::before{content:"";position:absolute;left:50%;top:44%;width:8px;height:8px;border-right:1.5px solid var(--gold);border-bottom:1.5px solid var(--gold);transform:translate(-50%,-50%) rotate(45deg)}
+.ritual-group[open] > summary .fold-icon{transform:rotate(180deg)}
+.ritual-group > summary:hover .rg-title{color:var(--lilac)}
+.rg-body{padding:0 18px 12px}
+.rg-body .group-title{margin-top:26px;font-size:1.5rem}
+.rg-body .group-title:first-child{margin-top:4px;border-top:none;padding-top:6px}
+.rg-body .ritual{background:var(--night)}
+.to-rituals{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:10px 16px;border:1px solid rgba(217,182,110,.45);border-radius:999px;color:#F1DDAE;text-decoration:none;font-size:.95rem}
+.to-rituals svg{width:22px;height:22px}
+.to-rituals span{color:var(--gold)}
+.to-rituals:hover{background:rgba(217,182,110,.08)}
+@media (max-width:620px){
+  .chapter.featured .chapter-body{padding:18px 14px}
+  .ritual-group > summary{grid-template-columns:28px minmax(0,1fr) 28px;gap:10px;padding:12px}
+  .ritual-group > summary > svg{width:28px;height:28px}
+  .rg-count{grid-column:2;grid-row:2;margin-top:-6px}
+  .ritual-group > summary .fold-icon{grid-column:3;grid-row:1 / span 2;width:28px;height:28px}
+  .rg-title{font-size:1.2rem}
+  .rg-body{padding:0 10px 8px}
+  .to-rituals{font-size:.88rem}
+}
+
 /* Заключение */
 .outro{text-align:center;padding-block:80px 100px;max-width:44em;margin:0 auto}
 .outro svg.big{width:140px;height:140px;margin:0 auto 28px;filter:drop-shadow(0 0 36px var(--glow))}
@@ -274,7 +309,6 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
 
 
 
-<!-- I. Введение -->
 <section class="chapter" id="intro">
   <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-wnc"/></svg><div class="num">I</div></div>
   <div class="chapter-body prose">
@@ -295,7 +329,6 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
 
 <div class="divider" aria-hidden="true"><svg viewBox="0 0 120 20"><use href="#orn"/></svg></div>
 
-<!-- II. Фазы -->
 <section class="chapter" id="phases">
   <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-new"/></svg><div class="num">II</div></div>
   <div class="chapter-body">
@@ -333,7 +366,6 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
 
 <div class="divider" aria-hidden="true"><svg viewBox="0 0 120 20"><use href="#orn"/></svg></div>
 
-<!-- III. Новолуние -->
 <section class="chapter" id="new">
   <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-new"/></svg><div class="num">III</div></div>
   <div class="chapter-body prose">
@@ -389,47 +421,7 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
     <ul class="affirm">
       <li>Я открыта новым возможностям</li><li>Я доверяю своему пути</li><li>Я разрешаю себе мечтать масштабно</li><li>Я достойна счастливой и наполненной жизни</li><li>Я выбираю то, что действительно хочу</li><li>Я создаю пространство для нового</li><li>Мои намерения ясны, а действия осознанны</li>
     </ul>
-
-    <h3>Ритуалы новолуния</h3>
-    <article class="ritual">
-      <h4>Посев желаний</h4>
-      <div class="need"><b>Понадобится</b>белая свеча, лист бумаги, ручка</div>
-      <ol class="steps">
-        <li>Зажгите свечу.</li>
-        <li>Устройтесь удобно и успокойте дыхание.</li>
-        <li>Запишите 3–5 желаний на новый лунный цикл.</li>
-        <li>Формулируйте их позитивно, конкретно и от первого лица.</li>
-        <li>Прочитайте каждое желание вслух.</li>
-        <li>Представьте, что вы уже движетесь к желаемому.</li>
-      </ol>
-      <p>Примеры намерений:</p>
-      <div class="spell">«Я открываю себя для взаимной любви. Я выбираю отношения, наполненные нежностью, уважением, страстью и заботой».
-«Я развиваю своё дело, проявляю таланты и увеличиваю доход через любимую деятельность».</div>
-      <p>В конце спросите себя: <b>какой первый шаг я могу сделать уже завтра?</b></p>
-    </article>
-    <article class="ritual">
-      <h4>Свеча нового начала</h4>
-      <div class="need"><b>Понадобится</b>белая свеча, лист бумаги, ручка</div>
-      <p>Запишите, что хотите пригласить в свою жизнь. Зажгите свечу и произнесите:</p>
-      <div class="spell">«Я открываю двери новому. Я отпускаю сомнения, выбираю свой путь и позволяю своим желаниям обрести форму. Пусть мои намерения станут началом прекрасных перемен».</div>
-      <p>Посидите несколько минут в тишине, представляя желаемые перемены.</p>
-    </article>
-    <article class="ritual">
-      <h4>Медитация на желаемую реальность</h4>
-      <p>Закройте глаза, расслабьтесь и представьте свою жизнь через год. Где вы живёте? Какие люди вас окружают? Какие отношения строите? Чем занимаетесь? Как себя чувствуете?</p>
-      <p>Представьте, что вы уже живёте той жизнью, к которой стремитесь. Почувствуйте благодарность, радость и уверенность. В завершение произнесите:</p>
-      <div class="spell">«Я открыта новым возможностям. Я выбираю свою счастливую реальность и готова создавать её своими действиями».</div>
-    </article>
-    <article class="ritual">
-      <h4>Три главных желания</h4>
-      <p>Выберите три сферы жизни и для каждой запишите одно, самое важное желание:</p>
-      <ol class="steps">
-        <li>Любовь и отношения.</li>
-        <li>Деньги и реализация.</li>
-        <li>Личность, тело и духовное развитие.</li>
-      </ol>
-      <p>Не распыляйтесь на десятки целей. Выберите то, что действительно имеет для вас значение.</p>
-    </article>
+    <a class="to-rituals" href="#rit-new"><svg aria-hidden="true"><use href="#m-new"/></svg>Ритуалы новолуния — в главе «Лунные ритуалы»<span aria-hidden="true">→</span></a>
     </div>
     </details>
   </div>
@@ -437,7 +429,6 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
 
 <div class="divider" aria-hidden="true"><svg viewBox="0 0 120 20"><use href="#orn"/></svg></div>
 
-<!-- IV. Растущая -->
 <section class="chapter" id="waxing">
   <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-wxc"/></svg><div class="num">IV</div></div>
   <div class="chapter-body prose">
@@ -474,26 +465,7 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
     <ul class="affirm">
       <li>Всё хорошее в моей жизни приумножается</li><li>Я открыта новым возможностям</li><li>Я позволяю себе расти и развиваться</li><li>Я достойна любви и изобилия</li><li>Мои таланты приносят мне достойное вознаграждение</li><li>Я смело проявляю себя</li>
     </ul>
-
-    <h3>Ритуалы растущей Луны</h3>
-    <article class="ritual">
-      <h4>На приумножение денег</h4>
-      <div class="need"><b>Понадобится</b>зелёная свеча, монета, лист бумаги</div>
-      <p>Запишите финансовую цель. Зажгите свечу, положите рядом монету и произнесите:</p>
-      <div class="spell">«Как растёт Луна на небосводе, так растут мои возможности, доходы и благополучие. Я замечаю возможности и смело действую».</div>
-      <p>Монету положите в кошелёк как символ своего намерения.</p>
-    </article>
-    <article class="ritual">
-      <h4>На привлечение новых возможностей</h4>
-      <p>Напишите три возможности, которые хотите пригласить в жизнь. Например: новые клиенты, интересная работа, полезные знакомства.</p>
-      <p>Рядом с каждой запишите конкретное действие, которое поможет её приблизить.</p>
-    </article>
-    <article class="ritual">
-      <h4>На красоту и обновление</h4>
-      <p>Выберите любимое средство ухода за телом. Во время ухода произносите:</p>
-      <div class="spell">«Я люблю своё тело. Я забочусь о себе. Я разрешаю себе быть красивой, здоровой, чувственной и счастливой».</div>
-      <p>Сделайте этот вечер символом внимания к своей женственности.</p>
-    </article>
+    <a class="to-rituals" href="#rit-waxing"><svg aria-hidden="true"><use href="#m-wxc"/></svg>Ритуалы растущей Луны — в главе «Лунные ритуалы»<span aria-hidden="true">→</span></a>
     </div>
     </details>
   </div>
@@ -501,7 +473,6 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
 
 <div class="divider" aria-hidden="true"><svg viewBox="0 0 120 20"><use href="#orn"/></svg></div>
 
-<!-- V. Полнолуние -->
 <section class="chapter" id="full">
   <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-full"/></svg><div class="num">V</div></div>
   <div class="chapter-body prose">
@@ -566,6 +537,7 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
     <ul class="affirm">
       <li>Я разрешаю себе сиять</li><li>Я открыта любви, счастью и изобилию</li><li>Я благодарю за всё, что уже есть</li><li>Я достойна получать желаемое</li><li>Я принимаю свою силу и женственность</li><li>Я отпускаю то, что больше не соответствует моему пути</li><li>Я выбираю проявляться и занимать своё место в мире</li>
     </ul>
+    <a class="to-rituals" href="#rit-full"><svg aria-hidden="true"><use href="#m-full"/></svg>Ритуалы полнолуния — в главе «Лунные ритуалы»<span aria-hidden="true">→</span></a>
     </div>
     </details>
   </div>
@@ -573,18 +545,204 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
 
 <div class="divider" aria-hidden="true"><svg viewBox="0 0 120 20"><use href="#orn"/></svg></div>
 
-<!-- VI. Ритуалы полнолуния -->
-<section class="chapter" id="full-rituals">
-  <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-full"/></svg><div class="num">VI</div></div>
+<section class="chapter" id="waning">
+  <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-wng"/></svg><div class="num">VI</div></div>
   <div class="chapter-body prose">
     <details class="chapter-fold">
     <summary class="chapter-head">
       <div class="eyebrow">Глава шестая</div>
-      <h2>Ритуалы полнолуния</h2>
-      <p class="energy">Выбирайте практики по своему запросу. Необязательно выполнять все ритуалы за один вечер.</p>
+      <h2>Убывающая Луна — время отпускать</h2>
+      <p class="energy">Энергия периода: очищение, завершение, освобождение, восстановление</p>
     <span class="fold-icon" aria-hidden="true"></span></summary>
     <div class="fold-body">
+    <p>После полнолуния видимая часть Луны начинает уменьшаться. В эзотерической традиции убывающую Луну связывают с освобождением пространства от всего, что больше не нужно.</p>
+    <blockquote class="quote">Если на растущей Луне мы привлекаем, то на убывающей — отпускаем.</blockquote>
 
+    <h3>Как может ощущаться этот период</h3>
+    <ul class="dots">
+      <li>желание уединиться;</li>
+      <li>стремление навести порядок;</li>
+      <li>потребность завершить старые дела;</li>
+      <li>желание пересмотреть окружение;</li>
+      <li>усталость от чрезмерной активности;</li>
+      <li>потребность в эмоциональном освобождении.</li>
+    </ul>
+
+    <div class="cols">
+      <div class="box">
+        <h4>Что рекомендуется</h4>
+        <ol class="steps">
+          <li>Завершать старые дела.</li>
+          <li>Отпускать обиды и прошлые привязанности.</li>
+          <li>Пересматривать расходы.</li>
+          <li>Закрывать долги и ненужные обязательства.</li>
+          <li>Очищать пространство.</li>
+          <li>Избавляться от ненужных вещей.</li>
+          <li>Принимать расслабляющие ванны.</li>
+          <li>Заниматься медитацией.</li>
+          <li>Вести дневник.</li>
+          <li>Отдыхать и восстанавливать силы.</li>
+        </ol>
+      </div>
+      <div class="box avoid">
+        <h4>Чего лучше избегать</h4>
+        <ul class="dots">
+          <li>Начинать множество проектов одновременно.</li>
+          <li>Цепляться за завершённые отношения.</li>
+          <li>Возвращаться к старым сценариям из страха одиночества.</li>
+          <li>Перегружать себя обязательствами.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Аффирмации убывающей Луны</h3>
+    <ul class="affirm">
+      <li>Я легко отпускаю то, что больше мне не служит</li><li>Я освобождаюсь от старых ограничений</li><li>Я выбираю себя</li><li>Я благодарю прошлое за опыт</li><li>Я освобождаю место для нового</li><li>Я доверяю естественному ходу жизни</li>
+    </ul>
+    <a class="to-rituals" href="#rit-waning"><svg aria-hidden="true"><use href="#m-wng"/></svg>Ритуалы убывающей Луны — в главе «Лунные ритуалы»<span aria-hidden="true">→</span></a>
+    </div>
+    </details>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><svg viewBox="0 0 120 20"><use href="#orn"/></svg></div>
+
+<section class="chapter" id="cheatsheet">
+  <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-lq"/></svg><div class="num">VII</div></div>
+  <div class="chapter-body">
+    <details class="chapter-fold">
+    <summary class="chapter-head prose">
+      <div class="eyebrow">Глава седьмая</div>
+      <h2>Что благоприятно делать в разные фазы</h2>
+      <p class="energy">Короткая шпаргалка по всему циклу</p>
+    <span class="fold-icon" aria-hidden="true"></span></summary>
+    <div class="fold-body">
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Фаза</th><th>Главное</th><th>Благоприятно</th><th>Лучше отложить</th></tr></thead>
+        <tbody>
+          <tr><td>Новолуние</td><td>Я выбираю, чего хочу</td><td>Намерения, планы на месяц, дневник желаний, медитации, начало обучения, отдых</td><td>Перегрузку, много новых обязательств, импульсивные решения</td></tr>
+          <tr><td>Растущая Луна</td><td>Я действую и привлекаю</td><td>Запуск проектов, поиск клиентов, свидания, курс ухода, стрижка, новые навыки и привычки</td><td>Бездействие: время не только мечтать, но и делать</td></tr>
+          <tr><td>Полнолуние</td><td>Я проявляюсь и благодарю</td><td>Благодарность, итоги цикла, практики на любовь, женственность и изобилие, работа с эмоциями</td><td>Импульсивные решения, конфликты, перегрузку практиками, контроль других</td></tr>
+          <tr><td>Убывающая Луна</td><td>Я отпускаю и освобождаю место</td><td>Завершение дел, расхламление, пересмотр расходов, закрытие долгов, ванны, дневник, отдых</td><td>Много новых проектов сразу, возврат к завершённым отношениям</td></tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+    </details>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><svg viewBox="0 0 120 20"><use href="#orn"/></svg></div>
+
+<section class="chapter featured" id="rituals">
+  <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-full"/></svg><div class="num">VIII</div></div>
+  <div class="chapter-body prose">
+    <details class="chapter-fold">
+    <summary class="chapter-head">
+      <div class="eyebrow">Глава восьмая · главная практика гайда</div>
+      <h2>Лунные ритуалы</h2>
+      <p class="energy">24 ритуала для каждой фазы Луны</p>
+    <span class="fold-icon" aria-hidden="true"></span></summary>
+    <div class="fold-body">
+    <p class="rit-intro">Выбирайте практики по своему запросу. Необязательно выполнять все ритуалы за один вечер. Откройте нужную фазу Луны.</p>
+
+    <details class="ritual-group" id="rit-rules">
+      <summary><svg aria-hidden="true"><use href="#m-new"/></svg><span class="rg-title">Перед началом: правила и безопасность</span><span class="rg-count">8 правил</span><span class="fold-icon" aria-hidden="true"></span></summary>
+      <div class="rg-body">
+    <ol class="steps">
+      <li>Не выполняйте ритуалы механически. Понимайте, зачем вы их делаете.</li>
+      <li>Формулируйте желания конкретно и позитивно.</li>
+      <li>Не направляйте практики на подавление чужой воли.</li>
+      <li>Не забывайте о реальных действиях после ритуалов.</li>
+      <li>Не нужно выполнять все практики одновременно.</li>
+      <li>Благодарите за то, что уже есть.</li>
+      <li>Наблюдайте за своими состояниями и записывайте изменения.</li>
+      <li>Доверяйте своим ощущениям, но не игнорируйте здравый смысл.</li>
+    </ol>
+    <div class="box" style="margin-top:24px">
+      <h4>Безопасность</h4>
+      <ul class="dots">
+        <li>Не наносите эфирные масла на фитиль и открытое пламя.</li>
+        <li>Ставьте свечи на устойчивую негорючую поверхность и не оставляйте их без присмотра.</li>
+        <li>Для ритуалов с водой берите только чистую питьевую воду. Не пейте воду, в которую попали эфирные масла, благовония или посторонние вещества.</li>
+      </ul>
+    </div>
+      </div>
+    </details>
+
+    <details class="ritual-group" id="rit-new">
+      <summary><svg aria-hidden="true"><use href="#m-new"/></svg><span class="rg-title">Ритуалы новолуния</span><span class="rg-count">4 ритуала</span><span class="fold-icon" aria-hidden="true"></span></summary>
+      <div class="rg-body">
+    <article class="ritual">
+      <h4>Посев желаний</h4>
+      <div class="need"><b>Понадобится</b>белая свеча, лист бумаги, ручка</div>
+      <ol class="steps">
+        <li>Зажгите свечу.</li>
+        <li>Устройтесь удобно и успокойте дыхание.</li>
+        <li>Запишите 3–5 желаний на новый лунный цикл.</li>
+        <li>Формулируйте их позитивно, конкретно и от первого лица.</li>
+        <li>Прочитайте каждое желание вслух.</li>
+        <li>Представьте, что вы уже движетесь к желаемому.</li>
+      </ol>
+      <p>Примеры намерений:</p>
+      <div class="spell">«Я открываю себя для взаимной любви. Я выбираю отношения, наполненные нежностью, уважением, страстью и заботой».
+«Я развиваю своё дело, проявляю таланты и увеличиваю доход через любимую деятельность».</div>
+      <p>В конце спросите себя: <b>какой первый шаг я могу сделать уже завтра?</b></p>
+    </article>
+    <article class="ritual">
+      <h4>Свеча нового начала</h4>
+      <div class="need"><b>Понадобится</b>белая свеча, лист бумаги, ручка</div>
+      <p>Запишите, что хотите пригласить в свою жизнь. Зажгите свечу и произнесите:</p>
+      <div class="spell">«Я открываю двери новому. Я отпускаю сомнения, выбираю свой путь и позволяю своим желаниям обрести форму. Пусть мои намерения станут началом прекрасных перемен».</div>
+      <p>Посидите несколько минут в тишине, представляя желаемые перемены.</p>
+    </article>
+    <article class="ritual">
+      <h4>Медитация на желаемую реальность</h4>
+      <p>Закройте глаза, расслабьтесь и представьте свою жизнь через год. Где вы живёте? Какие люди вас окружают? Какие отношения строите? Чем занимаетесь? Как себя чувствуете?</p>
+      <p>Представьте, что вы уже живёте той жизнью, к которой стремитесь. Почувствуйте благодарность, радость и уверенность. В завершение произнесите:</p>
+      <div class="spell">«Я открыта новым возможностям. Я выбираю свою счастливую реальность и готова создавать её своими действиями».</div>
+    </article>
+    <article class="ritual">
+      <h4>Три главных желания</h4>
+      <p>Выберите три сферы жизни и для каждой запишите одно, самое важное желание:</p>
+      <ol class="steps">
+        <li>Любовь и отношения.</li>
+        <li>Деньги и реализация.</li>
+        <li>Личность, тело и духовное развитие.</li>
+      </ol>
+      <p>Не распыляйтесь на десятки целей. Выберите то, что действительно имеет для вас значение.</p>
+    </article>
+      </div>
+    </details>
+
+    <details class="ritual-group" id="rit-waxing">
+      <summary><svg aria-hidden="true"><use href="#m-wxc"/></svg><span class="rg-title">Ритуалы растущей Луны</span><span class="rg-count">3 ритуала</span><span class="fold-icon" aria-hidden="true"></span></summary>
+      <div class="rg-body">
+    <article class="ritual">
+      <h4>На приумножение денег</h4>
+      <div class="need"><b>Понадобится</b>зелёная свеча, монета, лист бумаги</div>
+      <p>Запишите финансовую цель. Зажгите свечу, положите рядом монету и произнесите:</p>
+      <div class="spell">«Как растёт Луна на небосводе, так растут мои возможности, доходы и благополучие. Я замечаю возможности и смело действую».</div>
+      <p>Монету положите в кошелёк как символ своего намерения.</p>
+    </article>
+    <article class="ritual">
+      <h4>На привлечение новых возможностей</h4>
+      <p>Напишите три возможности, которые хотите пригласить в жизнь. Например: новые клиенты, интересная работа, полезные знакомства.</p>
+      <p>Рядом с каждой запишите конкретное действие, которое поможет её приблизить.</p>
+    </article>
+    <article class="ritual">
+      <h4>На красоту и обновление</h4>
+      <p>Выберите любимое средство ухода за телом. Во время ухода произносите:</p>
+      <div class="spell">«Я люблю своё тело. Я забочусь о себе. Я разрешаю себе быть красивой, здоровой, чувственной и счастливой».</div>
+      <p>Сделайте этот вечер символом внимания к своей женственности.</p>
+    </article>
+      </div>
+    </details>
+
+    <details class="ritual-group" id="rit-full">
+      <summary><svg aria-hidden="true"><use href="#m-full"/></svg><span class="rg-title">Ритуалы полнолуния</span><span class="rg-count">13 ритуалов</span><span class="fold-icon" aria-hidden="true"></span></summary>
+      <div class="rg-body">
     <div class="group-title"><span>А</span>Любовь, женственность и привлекательность</div>
     <article class="ritual">
       <h4>Обряд на женский магнетизм и красоту</h4>
@@ -718,70 +876,12 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
       <p>Запишите 20 вещей, за которые вы благодарны: люди, события, возможности, здоровье, тело, дом, работа, путешествия и маленькие радости. В конце произнесите:</p>
       <div class="spell">«Я вижу изобилие, которое уже присутствует в моей жизни. Я благодарю за полученное и открываюсь новым благам».</div>
     </article>
-    </div>
+      </div>
     </details>
-  </div>
-</section>
 
-<div class="divider" aria-hidden="true"><svg viewBox="0 0 120 20"><use href="#orn"/></svg></div>
-
-<!-- VII. Убывающая -->
-<section class="chapter" id="waning">
-  <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-wng"/></svg><div class="num">VII</div></div>
-  <div class="chapter-body prose">
-    <details class="chapter-fold">
-    <summary class="chapter-head">
-      <div class="eyebrow">Глава седьмая</div>
-      <h2>Убывающая Луна — время отпускать</h2>
-      <p class="energy">Энергия периода: очищение, завершение, освобождение, восстановление</p>
-    <span class="fold-icon" aria-hidden="true"></span></summary>
-    <div class="fold-body">
-    <p>После полнолуния видимая часть Луны начинает уменьшаться. В эзотерической традиции убывающую Луну связывают с освобождением пространства от всего, что больше не нужно.</p>
-    <blockquote class="quote">Если на растущей Луне мы привлекаем, то на убывающей — отпускаем.</blockquote>
-
-    <h3>Как может ощущаться этот период</h3>
-    <ul class="dots">
-      <li>желание уединиться;</li>
-      <li>стремление навести порядок;</li>
-      <li>потребность завершить старые дела;</li>
-      <li>желание пересмотреть окружение;</li>
-      <li>усталость от чрезмерной активности;</li>
-      <li>потребность в эмоциональном освобождении.</li>
-    </ul>
-
-    <div class="cols">
-      <div class="box">
-        <h4>Что рекомендуется</h4>
-        <ol class="steps">
-          <li>Завершать старые дела.</li>
-          <li>Отпускать обиды и прошлые привязанности.</li>
-          <li>Пересматривать расходы.</li>
-          <li>Закрывать долги и ненужные обязательства.</li>
-          <li>Очищать пространство.</li>
-          <li>Избавляться от ненужных вещей.</li>
-          <li>Принимать расслабляющие ванны.</li>
-          <li>Заниматься медитацией.</li>
-          <li>Вести дневник.</li>
-          <li>Отдыхать и восстанавливать силы.</li>
-        </ol>
-      </div>
-      <div class="box avoid">
-        <h4>Чего лучше избегать</h4>
-        <ul class="dots">
-          <li>Начинать множество проектов одновременно.</li>
-          <li>Цепляться за завершённые отношения.</li>
-          <li>Возвращаться к старым сценариям из страха одиночества.</li>
-          <li>Перегружать себя обязательствами.</li>
-        </ul>
-      </div>
-    </div>
-
-    <h3>Аффирмации убывающей Луны</h3>
-    <ul class="affirm">
-      <li>Я легко отпускаю то, что больше мне не служит</li><li>Я освобождаюсь от старых ограничений</li><li>Я выбираю себя</li><li>Я благодарю прошлое за опыт</li><li>Я освобождаю место для нового</li><li>Я доверяю естественному ходу жизни</li>
-    </ul>
-
-    <h3>Ритуалы убывающей Луны</h3>
+    <details class="ritual-group" id="rit-waning">
+      <summary><svg aria-hidden="true"><use href="#m-wng"/></svg><span class="rg-title">Ритуалы убывающей Луны</span><span class="rg-count">4 ритуала</span><span class="fold-icon" aria-hidden="true"></span></summary>
+      <div class="rg-body">
     <article class="ritual">
       <h4>Освобождение от страхов</h4>
       <p>Напишите свои страхи на листе бумаги. Рядом напишите, что вы можете сделать, чтобы они перестали управлять вашей жизнью. Прочитайте:</p>
@@ -800,6 +900,8 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
       <h4>Освобождение от старых привязанностей</h4>
       <p>Напишите письмо человеку или ситуации, с которыми хотите внутренне попрощаться. Отправлять его не обязательно. Напишите всё, что не удалось сказать, а затем уберите письмо или уничтожьте его.</p>
     </article>
+      </div>
+    </details>
     </div>
     </details>
   </div>
@@ -807,77 +909,12 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
 
 <div class="divider" aria-hidden="true"><svg viewBox="0 0 120 20"><use href="#orn"/></svg></div>
 
-<!-- VIII. Шпаргалка -->
-<section class="chapter" id="cheatsheet">
-  <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-lq"/></svg><div class="num">VIII</div></div>
-  <div class="chapter-body">
-    <details class="chapter-fold">
-    <summary class="chapter-head prose">
-      <div class="eyebrow">Глава восьмая</div>
-      <h2>Что благоприятно делать в разные фазы</h2>
-      <p class="energy">Короткая шпаргалка по всему циклу</p>
-    <span class="fold-icon" aria-hidden="true"></span></summary>
-    <div class="fold-body">
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Фаза</th><th>Главное</th><th>Благоприятно</th><th>Лучше отложить</th></tr></thead>
-        <tbody>
-          <tr><td>Новолуние</td><td>Я выбираю, чего хочу</td><td>Намерения, планы на месяц, дневник желаний, медитации, начало обучения, отдых</td><td>Перегрузку, много новых обязательств, импульсивные решения</td></tr>
-          <tr><td>Растущая Луна</td><td>Я действую и привлекаю</td><td>Запуск проектов, поиск клиентов, свидания, курс ухода, стрижка, новые навыки и привычки</td><td>Бездействие: время не только мечтать, но и делать</td></tr>
-          <tr><td>Полнолуние</td><td>Я проявляюсь и благодарю</td><td>Благодарность, итоги цикла, практики на любовь, женственность и изобилие, работа с эмоциями</td><td>Импульсивные решения, конфликты, перегрузку практиками, контроль других</td></tr>
-          <tr><td>Убывающая Луна</td><td>Я отпускаю и освобождаю место</td><td>Завершение дел, расхламление, пересмотр расходов, закрытие долгов, ванны, дневник, отдых</td><td>Много новых проектов сразу, возврат к завершённым отношениям</td></tr>
-        </tbody>
-      </table>
-    </div>
-    </div>
-    </details>
-  </div>
-</section>
-
-<div class="divider" aria-hidden="true"><svg viewBox="0 0 120 20"><use href="#orn"/></svg></div>
-
-<!-- X. Правила -->
-<section class="chapter" id="rules">
-  <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-new"/></svg><div class="num">IX</div></div>
-  <div class="chapter-body prose">
-    <details class="chapter-fold">
-    <summary class="chapter-head">
-      <div class="eyebrow">Глава девятая</div>
-      <h2>Важные правила лунных ритуалов</h2>
-    <span class="fold-icon" aria-hidden="true"></span></summary>
-    <div class="fold-body">
-    <ol class="steps">
-      <li>Не выполняйте ритуалы механически. Понимайте, зачем вы их делаете.</li>
-      <li>Формулируйте желания конкретно и позитивно.</li>
-      <li>Не направляйте практики на подавление чужой воли.</li>
-      <li>Не забывайте о реальных действиях после ритуалов.</li>
-      <li>Не нужно выполнять все практики одновременно.</li>
-      <li>Благодарите за то, что уже есть.</li>
-      <li>Наблюдайте за своими состояниями и записывайте изменения.</li>
-      <li>Доверяйте своим ощущениям, но не игнорируйте здравый смысл.</li>
-    </ol>
-    <div class="box" style="margin-top:24px">
-      <h4>Безопасность</h4>
-      <ul class="dots">
-        <li>Не наносите эфирные масла на фитиль и открытое пламя.</li>
-        <li>Ставьте свечи на устойчивую негорючую поверхность и не оставляйте их без присмотра.</li>
-        <li>Для ритуалов с водой берите только чистую питьевую воду. Не пейте воду, в которую попали эфирные масла, благовония или посторонние вещества.</li>
-      </ul>
-    </div>
-    </div>
-    </details>
-  </div>
-</section>
-
-<div class="divider" aria-hidden="true"><svg viewBox="0 0 120 20"><use href="#orn"/></svg></div>
-
-<!-- XI. Календарь -->
 <section class="chapter" id="calendar">
-  <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-wxc"/></svg><div class="num">X</div></div>
+  <div class="chapter-mark" aria-hidden="true"><svg><use href="#m-wxc"/></svg><div class="num">IX</div></div>
   <div class="chapter-body">
     <details class="chapter-fold">
     <summary class="chapter-head prose">
-      <div class="eyebrow">Глава десятая</div>
+      <div class="eyebrow">Глава девятая</div>
       <h2>Лунный календарь на 2027 год</h2>
       <p class="energy">Все даты и время указаны по Москве (МСК, UTC+3)</p>
     <span class="fold-icon" aria-hidden="true"></span></summary>
@@ -982,6 +1019,22 @@ td:first-child{font-family:var(--display);font-size:1.12rem;white-space:nowrap}
   <div class="sig">С любовью, Фиалка</div>
 </section>
 
+
+<script>
+(function(){
+  function openTo(id){
+    var el=document.getElementById(id); if(!el) return;
+    var p=el; while(p){ if(p.tagName==='DETAILS') p.open=true; p=p.parentElement; }
+    setTimeout(function(){ el.scrollIntoView({behavior:'smooth',block:'start'}); },30);
+  }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a.to-rituals'); if(!a) return;
+    e.preventDefault(); var id=a.getAttribute('href').slice(1); openTo(id);
+    try{ history.replaceState(null,'','#'+id); }catch(_){}
+  });
+  if(location.hash) openTo(location.hash.slice(1));
+})();
+</script>
 <footer class="footer">© Екатерина Фиалка · «Магия Луны. Как жить в гармонии с лунными циклами»</footer>
 
 </div>
